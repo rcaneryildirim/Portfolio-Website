@@ -179,17 +179,17 @@ h3 {
 
 /* line 130, ../../Arafath/CL/December/230. Portfolio/HTML/scss/theme-default.scss */
 .bg-img-1 {
-  background-image: url(../img/slider/slider-img-1.jpg);
+  background-image: url(../img/slider/slider-img-1.png);
 }
 
 /* line 133, ../../Arafath/CL/December/230. Portfolio/HTML/scss/theme-default.scss */
 .bg-img-2 {
-  background-image: url(../img/background-img/bg-img-2.jpg);
+  background-image: url(../img/background-img/bg-img-2.png);
 }
 
 /* line 136, ../../Arafath/CL/December/230. Portfolio/HTML/scss/theme-default.scss */
 .cta-bg-1 {
-  background-image: url(../img/background-img/bg-img-3.jpg);
+  background-image: url(../img/background-img/bg-img-3.png);
 }
 
 /* line 141, ../../Arafath/CL/December/230. Portfolio/HTML/scss/theme-default.scss */
@@ -925,7 +925,7 @@ h3 {
 @media (min-width: 1200px) and (max-width: 1500px) {
   /* line 16, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_header.scss */
   .header-area .main-header-area {
-    padding: 25px 85px;
+    padding: 25px 25px;
   }
 }
 
@@ -5391,16 +5391,6 @@ h6 {
   transition: 0.5s;
 }
 
-/* line 14, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_blog.scss */
-.blog_area a:hover, .blog_area a :hover {
-  background: -webkit-linear-gradient(131deg, #0181F5 0%, #0181F5 99%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-decoration: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 /* line 24, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_blog.scss */
 .single-blog {
   overflow: hidden;
@@ -5454,16 +5444,6 @@ h6 {
   font-weight: 300;
 }
 
-/* line 74, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_blog.scss */
-.single-blog .tag {
-  text-align: left;
-  display: inline-block;
-  float: left;
-  font-size: 13px;
-  font-weight: 300;
-  margin-right: 22px;
-  position: relative;
-}
 
 /* line 84, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_blog.scss */
 .single-blog .tag:after {
@@ -6883,13 +6863,6 @@ h6 {
   transition: 0.8s;
 }
 
-/* line 76, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_blog_part.scss */
-.blog_part .single-home-blog .card .card-body a:hover {
-  background: -webkit-linear-gradient(131deg, #ff7e5f 0%, #feb47b 99%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 /* line 83, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_blog_part.scss */
 .blog_part .single-home-blog .card .dot {
   position: relative;
@@ -6987,16 +6960,6 @@ h6 {
     margin-bottom: 10px;
     font-size: 18px;
   }
-}
-
-/* line 140, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_blog_part.scss */
-.blog_part .single-home-blog .card h5:hover {
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  background: -webkit-linear-gradient(131deg, #feb47b 0%, #ff7e5f 99%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: 1s;
 }
 
 /* line 150, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_blog_part.scss */
