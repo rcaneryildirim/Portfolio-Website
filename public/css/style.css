@@ -4587,7 +4587,8 @@ h6 {
 .unordered-list li {
   position: relative;
   padding-left: 30px;
-  line-height: 1.82em !important;
+  line-height: 28px;
+  color: #7A838B;
 }
 
 /* line 459, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_elements.scss */
@@ -4596,9 +4597,9 @@ h6 {
   position: absolute;
   width: 14px;
   height: 14px;
-  border: 3px solid #ff5e13;
+  border: 3px solid #0181F5;
   background: #fff;
-  top: 4px;
+  top: 8px;
   left: 0;
   border-radius: 50%;
 }
@@ -4610,8 +4611,7 @@ h6 {
 
 /* line 475, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_elements.scss */
 .ordered-list li {
-  list-style-type: decimal-leading-zero;
-  color: #ff5e13;
+  color: #FFFFFF;
   font-weight: 500;
   line-height: 1.82em !important;
 }
