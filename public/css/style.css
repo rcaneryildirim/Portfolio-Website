@@ -2568,7 +2568,7 @@ h3 {
   background-repeat: no-repeat;
   position: relative;
   z-index: 0;
-  background: #040E27;
+  background: #FFF;
 }
 
 @media (max-width: 767px) {
@@ -2581,7 +2581,7 @@ h3 {
 /* line 36, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_bradcam.scss */
 .bradcam_area h3 {
   font-size: 70px;
-  color: #fff;
+  color: #0181F5;
   font-weight: 400;
   margin-bottom: 0;
   text-transform: capitalize;
@@ -3702,7 +3702,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
 .work_details_area {
-  background: #040E27;
+  background: #ffffff;
   padding-bottom: 70px;
   position: relative;
   margin-top: -30px;
@@ -3749,7 +3749,7 @@ h3 {
 /* line 24, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
 .work_details_area .details_catagory_wrap .single_catagory h4 {
   font-size: 16px;
-  color: #fff;
+  color: #040E27;
   font-weight: 400;
 }
 
