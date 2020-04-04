@@ -2982,7 +2982,7 @@ h3 {
 }
 
 /* line 1, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_discuss.scss */
-.discuss_projects {
+.discuss_projects_blue {
   background: #0181F5;
   padding: 170px 0 155px 0;
   position: relative;
@@ -3720,7 +3720,7 @@ h3 {
   -ms-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: space-between;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 767px) {
@@ -3789,13 +3789,13 @@ h3 {
 
 /* line 51, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
 .work_details_area .banner {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 767px) {
   /* line 51, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
   .work_details_area .banner {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
@@ -3806,7 +3806,7 @@ h3 {
 
 /* line 61, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
 .work_details_area .details_info {
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 /* line 63, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
@@ -3818,7 +3818,7 @@ h3 {
 .work_details_area .details_info .info p {
   font-size: 16px;
   font-weight: 400;
-  color: #AAB1B7;
+  color: ##828793;
 }
 
 /* line 74, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
