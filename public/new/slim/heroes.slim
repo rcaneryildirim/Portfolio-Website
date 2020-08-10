@@ -1,0 +1,351 @@
+doctype html
+html lang="en"
+  head
+    == Slim::Template.new('_header.slim').render
+  body
+    == Slim::Template.new('_navigation.slim').render
+
+    / heroes page sections
+
+    / hero-1 section /
+    .rainbow-hero.rainbow-hero-1.mb-5
+      .hero-content.container.d-flex.flex-column
+        .hero-top.d-flex.justify-content-between.align-items-center.py-3
+          a.navbar-brand href="#"
+            img src="images/main/logo-color.png" srcset="images/main/logo-color@2x.png 2x, images/main/logo-color@3x.png 3x"
+          a.btn.btn-sm.minw-xs-80.btn-danger href="" Sign up
+        .hero-info.my-auto
+          .row
+            .col-md-6
+              h1.hero-title.mb-4 Gordon Ramsey teaches cooking
+              p.hero-subtitle Chef Ramsay invites you into his home kitchen to learn the techniques that have earned him 6 Michelin stars.
+          a.btn.btn-lg.btn-rainbow-primary.minw-xs-180.mt-5 href="" Join class
+
+    / hero-2 section
+    .rainbow-hero-2
+      .top-left-shade
+      .top-right-shade
+      .bottom-shade
+      .container.position-relative
+        nav.navbar.navbar-inverse.navbar-expand-md.justify-content-between
+          a.navbar-brand href="#"
+            img src="images/main/logo-white.png" srcset="images/main/logo-white@2x.png 2x, images/main/logo-white@3x.png 3x"
+          button.navbar-toggler data-target="#nav02" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #nav02.navbar-collapse.collapse.justify-content-end
+            div
+              ul.nav.navbar-nav
+                li.nav-item.active
+                  a.nav-item.nav-link.active.fw-bold.border-top-white.position-relative.px-3 href="#" App preview
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Platforms
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" FAQ
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Download
+        .row.align-items-center
+          .col-sm-12.col-md-6
+            h1.text-white.fw-light.mt-3 Say hello with a smile
+            p.text-white Smartchat is a smart messaging app that helps you say more and do more, in a fun way. Personalize each message with stickers, emojis and beautiful text styles.
+            .d-block
+              a.btn.btn-lg.btn-rainbow-primary.minw-xs-180.m-2 href="#"
+                img.mr-2.mb-1 width="20" src="images/icons/play-btn.svg"
+                span.text-white Watch video
+              a.btn.btn-lg.btn-white.minw-xs-180.m-2 href="#"
+                span Explore
+          .col-sm-12.col-md-6.py-5
+            .iphone-white.mx-auto
+              .iphone-speaker
+              .iphone-front-camera
+              .iphone-screen
+                img src="images/heroes-img/messages-app-screen.jpg"
+              .iphone-home-button
+
+    / hero-3 section /
+    .bg-white.mt-5
+      .container
+        nav.navbar.navbar-light.navbar-expand-md.justify-content-between
+          a.navbar-brand href="#"
+            img src="images/main/logo-color.png" srcset="images/main/logo-color@2x.png 2x, images/main/logo-color@3x.png 3x"
+          button.navbar-toggler data-target="#nav03" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #nav03.navbar-collapse.collapse.justify-content-between.align-items-center
+            div
+            ul.navbar-nav
+              li.nav-item.active
+                a.nav-link.text-primary.fw-bold.px-3 href="#"
+                  | Product
+                  span.sr-only Home
+              li.nav-item
+                a.nav-link.px-3 href="#" Design
+              li.nav-item
+                a.nav-link.px-3 href="#" Shipping
+              li.nav-item
+                a.nav-link.px-3 href="#" News
+            ul.nav.navbar-nav.flex-row
+              li.nav-item.px-3
+                a.nav-link href="#"
+                  img height="20" src="images/icons/search-icon.svg"
+              li.nav-item
+                a.nav-link href="#"
+                  img src="images/heroes-img/profile-picture.png"
+        .row
+          .col-md-6.col-sm-12
+            img.width100 src="images/forms-img/headset.png"
+          .col-md-6.col-sm-12.align-self-center
+            h1.fw-light.text-primary When elegance meets beauty
+            p.mt-4 Perfection can't be achieved, but you can't get any closer. Experience amazing sound quality and sharp edge design with our new headphones.
+            .my-5
+              .d-inline-block.m-1
+                a.btn.btn-lg.btn-rainbow-info.minw-xs-180 href="#" Buy now $299
+              .d-inline-block.m-1
+                a.btn.btn-lg.btn-outline.btn-outline-blue.minw-xs-180 href="#" View specs
+
+
+    / hero-4 section /
+    .rainbow-hero.rainbow-hero-4.mt-5
+      .top-left-shade
+      .top-right-shade
+      .bottom-shade
+      .hero-content.container.d-flex.flex-column
+        nav.navbar.navbar-inverse.justify-content-between
+          a.navbar-brand href="#"
+            img src="images/main/logo-white.png" srcset="images/main/logo-white@2x.png 2x, images/main/logo-white@3x.png 3x"
+          .flex-row
+            a.nav-link.d-inline href="#"
+              img height="20" src="images/icons/search-white.svg"
+            button.navbar-toggler aria-controls="nav04" aria-expanded="false" aria-label=("Toggle navigation") data-target="#nav04" data-toggle="collapse" type="button"
+              span.navbar-toggler-icon
+        #nav04.collapse
+          .p-3
+            h3 Collapsed content
+
+        .hero-info.container.my-auto
+          .row.justify-content-center
+            .stacked-avatars
+              img.avatar.avatar-rounded.avatar-84.has-shadow src="images/avatars/avatar-2.jpg"
+              img.avatar.avatar-rounded.avatar-112.has-shadow src="images/avatars/avatar-1.jpg"
+              img.avatar.avatar-rounded.avatar-84.has-shadow src="images/avatars/avatar-3.jpg"
+          .row.justify-content-md-center.mt-4
+            .col-12.text-center
+              h1 Connect with your team
+              p.mt-4 Calls, messages, attachments and much more. All you need for a perfect work environment with your team.
+          .row.form
+            .col-9.mx-auto.mt-4
+              .form-group.stacked-btn-field
+                input.form-control.form-control-hero placeholder="Your email address" type="text"
+                a.btn.btn-rounded.btn-stacked.responsive-input-btn.moz-fix.btn-rainbow-warning href="#" Start free trial
+
+    / hero-5 section /
+    .rainbow-hero.rainbow-hero-5.mt-5
+      .hero-content.container.d-flex.flex-column
+        nav.navbar.navbar-inverse.navbar-expand-md.justify-content-between.z-index4
+          a.navbar-brand href="#"
+            img src="images/main/logo-white.png" srcset="images/main/logo-white@2x.png 2x, images/main/logo-white@3x.png 3x"
+          button.navbar-toggler data-target="#nav05" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #nav05.navbar-collapse.collapse.justify-content-end
+            div
+              ul.nav.navbar-nav
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Men
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Women
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Kids
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Shipping
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Blog
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Contact
+        div.my-auto
+          .hero-info.text-center
+            .row
+              .col
+                p DISCOUNTS UP TO 90%
+                h1.mb-5 SUMMER SALE
+                a.btn.btn-lg.btn-rainbow-warning.minw-xs-220 href="#" Start Shopping
+        div.text-center.mt-3
+          a.align-items-end href="#"
+            img height="44" src="images/icons/down-sign.svg"
+
+    / hero-6 section /
+    .rainbow-hero.rainbow-hero-6.mt-5
+      .hero-content.container.d-flex.flex-column.overflow-hidden
+        nav.navbar.navbar-inverse.navbar-expand-md.justify-content-between.z-index4
+          a.navbar-brand href="#"
+            img src="images/main/logo-white.png" srcset="images/main/logo-white@2x.png 2x, images/main/logo-white@3x.png 3x"
+          button.navbar-toggler data-target="#nav06" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #nav06.navbar-collapse.collapse.justify-content-end
+            div
+              ul.nav.navbar-nav
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Men
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Women
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Kids
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Shipping
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Blog
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Contact
+        p.scalable-header2.fw-bold.text-center FASHION
+        img.hero-model src="images/heroes-img/model.png"
+        .hero-info.my-auto.text-center.overflow-hidden
+          h1.mb-4 New Arrivals
+          div.mb-5
+            a.btn.btn-lg.btn-rainbow-primary.has-shadow.minw-xs-220.radius30 href="#" Browse Collection
+
+    / hero-7 section /
+    .rainbow-hero.rainbow-hero-7.mt-5
+      .hero-content.d-flex.flex-column
+        nav.navbar.navbar-gradient.navbar-inverse.navbar-expand-md.justify-content-between
+          .container
+            a.navbar-brand href="#"
+              img src="images/main/logo-white.png" srcset="images/main/logo-white@2x.png 2x, images/main/logo-white@3x.png 3x"
+            button.navbar-toggler data-target="#nav07" data-toggle="collapse" type="button"
+              span.navbar-toggler-icon
+            #nav07.navbar-collapse.collapse.justify-content-between.align-items-center
+              div
+              ul.navbar-nav
+                li.nav-item.px-lg-3
+                  a.nav-link href="#" Shop
+                li.nav-item.px-lg-3
+                  a.nav-link href="#" Blog
+                li.nav-item.px-lg-3
+                  a.nav-link href="#" About
+                li.nav-item.px-lg-3
+                  a.nav-link href="#" Contact
+              ul.navbar-nav
+                li.nav-item.px-2
+                  a.nav-link href="#"
+                    img height="20" src="images/icons/search-white.svg"
+                li.nav-item.px-2
+                  a.nav-link href="#"
+                    img height="20" src="images/icons/basket-yellow.svg"
+                li.nav-item.px-2
+                  a.nav-link href="#"
+                    img src="images/avatars/avatar04.png"
+        .hero-subject.overflow-hidden Sneakers
+        .hero-info.my-auto
+          .container
+            .row.justify-content-md-center
+              .col-md-auto
+                .details.text-center
+                  h1.first New
+                  h1.second.mb-5 Collection
+                  a.btn.btn-lg.btn-rainbow-warning.has-shadow.minw-xs-220 href="#" Start Shopping
+
+    / hero-8 section /
+    .rainbow-hero.rainbow-hero-8.mt-5
+      .container.hero-content.d-flex.flex-column
+        nav.navbar.navbar-inverse.justify-content-between
+          a.navbar-brand href="#"
+            img src="images/main/logo-white.png" srcset="images/main/logo-white@2x.png 2x, images/main/logo-white@3x.png 3x"
+          .flex-row
+            a.nav-link.d-inline href="#"
+              img height="20" src="images/icons/search-white.svg"
+            button.navbar-toggler aria-controls="nav08" aria-expanded="false" aria-label=("Toggle navigation") data-target="#nav08" data-toggle="collapse" type="button"
+              span.navbar-toggler-icon
+        #nav08.collapse
+          .p-3
+            h3 Collapsed content
+
+        .hero-info.mt-auto
+          .container
+            .row.mb-5
+              .col-md-8.mx-auto.text-center.mb-3
+                h1.text-white Rainbow UI
+                p.text-white Fresh, clean, stunning! This is Rainbow, the complete UI kit with over 1000 ui elements, carefully designed to help you build gorgeous projects.
+                .mt-5
+                  .d-inline-block.m-3
+                    a.btn.btn-lg.btn-rainbow-warning.minw-xs-180 href="#" Buy now
+                  .d-inline-block.m-3
+                    a.btn.btn-lg.btn-outline.btn-outline-white.minw-xs-180 href="#" Free demo
+
+    / hero-9 section /
+    .rainbow-hero.rainbow-hero-9.mt-5
+      .hero-content
+        .container
+          nav.navbar.navbar-light.justify-content-between
+            a.navbar-brand href="#"
+              img src="images/main/logo-color.png" srcset="images/main/logo-color@2x.png 2x, images/main/logo-color@3x.png 3x"
+            .flex-row
+              a.nav-link.d-inline href="#"
+                img height="20" src="images/icons/search-icon.svg"
+              button.navbar-toggler aria-controls="nav09" aria-expanded="false" aria-label=("Toggle navigation") data-target="#nav09" data-toggle="collapse" type="button"
+                span.navbar-toggler-icon
+          #nav09.collapse
+            .p-3
+              h3 Collapsed content
+
+          .text-center.mt-5.h-700
+            h6.text-uppercase Photographer
+            h1 Jason Hunter
+            p.mb-10 Let me show you the world through my lense
+            div.down-arrow-0
+              a.align-items-end href="#"
+                img height="44" src="images/icons/down-sign.svg"
+
+    / hero-10 section /
+    .bg-white.overflow-hidden.mt-5
+      .container
+        nav.navbar.navbar-light.navbar-expand-md.justify-content-between
+          a.navbar-brand href="#"
+            img src="images/main/logo-color.png" srcset="images/main/logo-color@2x.png 2x, images/main/logo-color@3x.png 3x"
+          button.navbar-toggler data-target="#collapsingNavbar1" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #collapsingNavbar1.navbar-collapse.collapse.justify-content-end
+            div
+              ul.nav.navbar-nav
+                li.nav-item.active
+                  a.nav-item.nav-link.active.text-primary.fw-bold.px-3 href="#" Product
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Download
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Suport
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Contact
+        .text-center.mt-5
+          h1.fw-light.mt-3 Perfect for busy people
+          p.text-gray.mt-3 With TaskTrack you will never lose track of your buys schedule. We promise :)
+          .d-block
+            a.btn.btn-lg.btn-white.has-shadow.minw-xs-180.m-3 href="#"
+              img.mr-2.mb-1 src="images/icons/google_play.svg"
+              span Google Play
+            a.btn.btn-lg.btn-white.has-shadow.minw-xs-180.m-3 href="#"
+              img.mr-2.mb-1 src="images/icons/apple.svg"
+              span App Store
+
+        div.d-flex.align-items-center.justify-content-center.position-relative.top90
+          div.m-2
+            img.width200.m-2 src="images/heroes-img/hero-spots.svg"
+          div.align-items-center
+            .iphone-white.iphone-sm
+              .iphone-speaker
+              .iphone-front-camera
+              .iphone-screen
+                img src="images/heroes-img/app-screen-1.jpg"
+              .iphone-home-button
+          div.position-absolute.z-index4.top40
+            .iphone-white.is-in-front
+              .iphone-speaker
+              .iphone-front-camera
+              .iphone-screen
+                img src="images/heroes-img/app-screen-2.jpg"
+              .iphone-home-button
+          div.align-items-center
+            .iphone-white.iphone-sm
+              .iphone-speaker
+              .iphone-front-camera
+              .iphone-screen
+                img src="images/heroes-img/app-screen-3.jpg"
+              .iphone-home-button
+          div.m-2
+            img.width200 src="images/heroes-img/hero-spots2.svg"
+
+    == Slim::Template.new('_footer.slim').render

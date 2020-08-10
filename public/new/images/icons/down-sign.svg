@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>down-sign</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="down-sign" fill="#000000" fill-rule="nonzero">
+            <g id="XMLID_4_">
+                <path d="M20.5,40.167 C9.656,40.167 0.833,31.345 0.833,20.5 C0.833,9.656 9.655,0.834 20.5,0.834 C31.345,0.834 40.167,9.656 40.167,20.5 C40.167,31.344 31.344,40.167 20.5,40.167 Z M20.5,2.833 C10.759,2.833 2.833,10.758 2.833,20.499 C2.833,30.24 10.759,38.167 20.5,38.167 C30.241,38.167 38.167,30.241 38.167,20.5 C38.167,10.759 30.241,2.833 20.5,2.833 Z" id="XMLID_5_"></path>
+            </g>
+            <g id="XMLID_2_" transform="translate(13.000000, 17.000000)">
+                <polygon id="XMLID_3_" points="7.505 8.905 0.3 1.838 1.7 0.411 7.495 6.094 13.212 0.416 14.622 1.833"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

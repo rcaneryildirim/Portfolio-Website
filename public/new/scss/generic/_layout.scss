@@ -1,0 +1,9 @@
+body {
+  background-color: #F2F2F2;
+  @include font-smoothing(antialiased);
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.valign-bottom {
+  vertical-align: bottom !important;
+}

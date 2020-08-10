@@ -1,0 +1,348 @@
+doctype html
+html lang="en"
+  head
+    == Slim::Template.new('_header.slim').render
+  body
+    == Slim::Template.new('_navigation.slim').render
+
+    / Header 1
+    .bg-white.mt-5
+      .container
+        nav.navbar.navbar-light.navbar-expand-md.justify-content-between
+          a.navbar-brand href="#"
+            img src="images/main/logo-color.png" srcset="images/main/logo-color@2x.png 2x, images/main/logo-color@3x.png 3x"
+          button.navbar-toggler data-target="#collapsingNavbar1" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #collapsingNavbar1.navbar-collapse.collapse.justify-content-end
+            div
+              ul.nav.navbar-nav
+                li.nav-item.active
+                  a.nav-item.nav-link.active.text-primary.fw-bold.border-bottom-primary.text-center.px-3 href="#" Shop
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Portfolio
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Blog
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" About
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Contact
+    / Header 2
+    .bg-white.mt-5
+      .container
+        nav.navbar.navbar-light.navbar-expand-md.justify-content-between
+          a.navbar-brand href="#"
+            img src="images/main/logo-color.png" srcset="images/main/logo-color@2x.png 2x, images/main/logo-color@3x.png 3x"
+          button.navbar-toggler data-target="#collapsingNavbar2" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #collapsingNavbar2.navbar-collapse.collapse.justify-content-between.align-items-center
+            div
+            ul.navbar-nav
+              li.nav-item.active
+                a.nav-link.text-danger.fw-bold.px-3 href="#"
+                  | Products
+                  span.sr-only Home
+              li.nav-item
+                a.nav-link.px-3 href="#" Designers
+              li.nav-item
+                a.nav-link.px-3 href="#" Collections
+              li.nav-item
+                a.nav-link.px-3 href="#" News
+            ul.nav.navbar-nav.flex-row
+              li.nav-item.px-3
+                a.nav-link href="#"
+                  img height="20" src="images/icons/search-icon.svg"
+              li.nav-item
+                a.nav-link href="#"
+                  img src="images/heroes-img/profile-picture.png"
+    / Header 3
+    .bg-white.mt-5
+      .container
+        nav.navbar.navbar-light.justify-content-between
+          a.navbar-brand href="#"
+            img src="images/main/logo-color.png" srcset="images/main/logo-color@2x.png 2x, images/main/logo-color@3x.png 3x"
+          .flex-row
+            a.nav-link.d-inline href="#"
+              img height="20" src="images/icons/search-icon.svg"
+            button.navbar-toggler aria-controls="navbar6" aria-expanded="false" aria-label=("Toggle navigation") data-target="#collapsingNavbar3" data-toggle="collapse" type="button"
+              span.navbar-toggler-icon
+        #collapsingNavbar3.collapse
+          .p-3
+            h3 Collapsed content
+    / Header 4
+    .bg-white.mt-5
+      .container
+        nav.navbar.navbar-light.navbar-expand-md.justify-content-between
+          a.navbar-brand href="#"
+            img src="images/main/logo-color.png" srcset="images/main/logo-color@2x.png 2x, images/main/logo-color@3x.png 3x"
+          #collapsingNavbar4.justify-content-between
+            div
+              ul.nav.navbar-nav.flex-row.align-items-center
+                li.nav-item
+                  a.nav-link href="#"
+                    img src="images/avatars/avatar02.png"
+                li.nav-item.dropdown
+                  a.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"  Rachael Gardner
+                  .dropdown-menu
+                    a.dropdown-item href="#"  Link
+                    a.dropdown-item href="#"  Link
+                    a.dropdown-item href="#"  Link
+    .bg-faded
+      .container
+        nav.navbar.navbar-light.navbar-expand-md.justify-content-between
+          button.navbar-toggler data-target="#collapsingNavbar04" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #collapsingNavbar04.navbar-collapse.collapse.justify-content-between
+            div
+              ul.nav.navbar-nav
+                li.nav-item.active
+                  a.nav-item.nav-link.active.text-primary.text-center.fw-bold.border-bottom-primary.px-3 href="#" Product
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Designer
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Collection
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" News
+            ul.nav.navbar-nav
+              li.nav-item
+                a.nav-link.px-3 href="#"
+                  img height="20" src="images/icons/search-icon.svg"
+    / Header 5
+    .bg-white.mt-5
+      .container
+        nav.navbar.navbar-light.navbar-expand-md.justify-content-center
+          button.navbar-toggler data-target="#collapsingNavbar5" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #collapsingNavbar5.navbar-collapse.collapse.justify-content-center
+            div
+              ul.navbar-nav
+                li.nav-item.px-3
+                  a.nav-link.fw-bold href="#" SERVICES
+                li.nav-item.px-3
+                  a.nav-link.mobile-no |
+                li.nav-item.px-3
+                  a.nav-link.fw-bold href="#" DESIGN
+                li.nav-item.px-3
+                  a.nav-link.mobile-no |
+                li.nav-item.px-3
+                  a.nav-link.fw-bold href="#" PORTFOLIO
+                li.nav-item.px-3.fw-bold
+                  a.nav-link href="#"
+                    img src="images/main/slogo.png" srcset="images/main/slogo@2x.png 2x, images/main/slogo@3x.png 3x"
+                li.navbar-item.px-3
+                  a.nav-link.fw-bold href="#" SERVICES
+                li.nav-item.px-3
+                  a.nav-link.mobile-no |
+                li.nav-item.px-3
+                  a.nav-link.fw-bold href="#" DESIGN
+                li.nav-item.px-3
+                  a.nav-link.mobile-no |
+                li.navbar-item.px-3
+                  a.nav-link.fw-bold href="#" PORTFOLIO
+    / Header 6
+    .bg-white.mt-5
+      nav.navbar.navbar-expand-md.navbar-light.justify-content-between.p-0.pr-4
+        a.fluid-brand.bg-1 href="#"
+          img src="images/main/slogo-white.png" srcset="images/main/slogo-white@2x.png 2x, images/main/slogo-white@3x.png 3x"
+        button.navbar-toggler data-target="#collapsingNavbar6" data-toggle="collapse" type="button"
+          span.navbar-toggler-icon
+        #collapsingNavbar6.navbar-collapse.collapse.justify-content-between
+          ul.nav.navbar-nav.align-items-center
+            li.nav-item
+              a.nav-link href="#"
+                img height="20" src="images/icons/search-icon.svg"
+            li.nav-item.w-215
+              form.my-auto.d-inline
+                .input-group
+                  input.form-control.border-0 placeholder="Type something to search" type="text" /
+                  span.input-group-btn
+          ul.navbar-nav
+            li.nav-item.px-2
+              a.nav-link.px- href="#"
+                img width="20" src="images/icons/camera-flat.svg"
+            li.nav-item.px-2
+              a.nav-link href="#"
+                img width="20" src="images/icons/mail-flat.svg"
+            li.nav-item.px-2
+              a.nav-link href="#"
+                img width="20" src="images/icons/alarm-flat.svg"
+            li.nav-item.px-2
+              a.nav-link href="#"
+                img src="images/avatars/avatar03.png"
+    / Header 7
+    .bg-7.mt-5
+      .container
+        nav.navbar.navbar-inverse.navbar-expand-md.justify-content-between
+          a.navbar-brand href="#"
+            img src="images/main/logo-white.png" srcset="images/main/logo-white@2x.png 2x, images/main/logo-white@3x.png 3x"
+          button.navbar-toggler data-target="#collapsingNavbar7" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #collapsingNavbar7.navbar-collapse.collapse.justify-content-end
+            div
+              ul.nav.navbar-nav
+                li.nav-item.active
+                  a.nav-item.nav-link.active.text-center.text-white.fw-bold.border-bottom-white.px-3 href="#" Shop
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Portfolio
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Blog
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" About
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Contact
+    / Header 8
+    .bg-2.mt-5
+      .container
+        nav.navbar.navbar-inverse.navbar-expand-md.justify-content-between
+          button.navbar-toggler data-target=".collapsingNavbar8" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          .navbar-collapse.collapse.collapsingNavbar8
+            ul.navbar-nav
+              li.nav-item
+                a.nav-link href="#"
+                  img height="20" src="images/icons/facebook-white.svg"
+              li.nav-item
+                a.nav-link href="#"
+                  img height="20" src="images/icons/gplus-white.svg"
+              li.nav-item
+                a.nav-link href="#"
+                  img height="20" src="images/icons/twitter-white.svg"
+              li.nav-item
+                a.nav-link href="#"
+                  img height="20" src="images/icons/instagram-white.svg"
+          a.navbar-brand.mr-0 href="#"
+            img src="images/main/logo-white.png" srcset="images/main/logo-white@2x.png 2x, images/main/logo-white@3x.png 3x"
+          .navbar-collapse.collapse.collapsingNavbar8.show
+            ul.nav.navbar-nav.ml-auto.justify-content-center.align-items-center.flex-row
+              li.nav-item.px-2
+                a.nav-link href="#"
+                  img height="20" src="images/icons/search-white.svg"
+              li.nav-item.px-2
+                a.nav-link href="#"
+                  img height="20" src="images/icons/basket-yellow.svg"
+              li.nav-item.px-2
+                a.nav-link href="#"
+                  img src="images/avatars/avatar04.png"
+    .bg-2
+      .container
+        nav.navbar.navbar-inverse.navbar-expand-md.justify-content-center
+          button.navbar-toggler data-target="#collapsingNavbar08" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #collapsingNavbar08.navbar-collapse.collapse.justify-content-center
+            div
+              ul.nav.navbar-nav
+                li.nav-item.active
+                  a.nav-item.nav-link.active.text-white.fw-bold.px-3 href="#" Shop
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Portfolio
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Blog
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" About
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Contact
+    / Header 9
+    .bg-white.mt-5
+      .container
+        nav.navbar.navbar-light.navbar-expand-md.justify-content-between
+          ul.navbar-nav
+            li.nav-item.active
+              a.nav-link.fw-bold href="#"
+                | $ USD
+                span.sr-only Home
+            li.nav-item
+              a.nav-link href="#"  E EUR
+            li.nav-item.dropdown
+              a.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
+                img src="images/icons/flag-flat.png"
+              .dropdown-menu
+                a.dropdown-item href="#"  Link
+                a.dropdown-item href="#"  Link
+                a.dropdown-item href="#"  Link
+          ul.nav.navbar-nav.ml-auto.align-items-center
+            li.nav-item
+              a.nav-link.px-3 href="#" Sign in
+            li.nav-item.active
+              a.nav-link.px-3.fw-medium.rounded.border-button.text-primary href="#" Sign up
+    .bg-1
+      .container
+        nav.navbar.navbar-inverse.navbar-expand-md.justify-content-between
+          a.navbar-brand href="#"
+            img src="images/icons/slogo-white.png" srcset="images/main/slogo-white@2x.png 2x, images/main/slogo-white@3x.png 3x"
+          button.navbar-toggler data-target="#collapsingNavbar09" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #collapsingNavbar09.navbar-collapse.collapse.justify-content-between
+            div
+            ul.navbar-nav
+              li.nav-item.active.px-lg-3
+                a.nav-link.fw-bold href="#"
+                  | Shop
+                  span.sr-only Home
+              li.nav-item.px-lg-3
+                a.nav-link href="#" Portfolio
+              li.nav-item.px-lg-3
+                a.nav-link href="#" Blog
+              li.nav-item.px-lg-3
+                a.nav-link href="#" About
+              li.nav-item.px-lg-3
+                a.nav-link href="#" Contact
+            ul.nav.navbar-nav.flex-row
+              li.nav-item.px-lg-2
+                a.nav-link href="#"
+                  img height="20" src="images/icons/search-white.svg"
+              li.nav-item.border-right-gray
+                a.nav-link.px-3 href="#"
+                  img height="20" src="images/icons/basket-green.svg"
+    / Header 10
+    .bg-1.mt-5
+      .container
+        nav.navbar.navbar-inverse.navbar-expand-md.justify-content-between
+          ul.navbar-nav
+            li.nav-item.active
+              a.nav-link.fw-bold href="#"
+                | $ USD
+                span.sr-only Home
+            li.nav-item
+              a.nav-link href="#"  E EUR
+            li.nav-item.dropdown
+              a.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
+                img src="images/icons/flag-flat.png"
+              .dropdown-menu
+                a.dropdown-item href="#"  Link
+                a.dropdown-item href="#"  Link
+                a.dropdown-item href="#"  Link
+          ul.nav.navbar-nav.ml-auto.align-items-center
+            li.nav-item
+              a.nav-link.px-3 href="#" Sign in
+            li.nav-item.active
+              a.nav-link.px-3.rounded.border-button.fw-medium href="#" Sign up
+    .bg-white.mb-5
+      .container
+        nav.navbar.navbar-light.navbar-expand-md.justify-content-between
+          a.navbar-brand href="#"
+            img src="images/main/slogo.png" srcset="images/main/slogo@2x.png 2x, images/main/slogo@3x.png 3x"
+          button.navbar-toggler data-target="#collapsingNavbar010" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #collapsingNavbar010.navbar-collapse.collapse.justify-content-between
+            div
+            ul.navbar-nav
+              li.nav-item.active.px-lg-3
+                a.nav-link.fw-bold.text-primary href="#"
+                  | Shop
+                  span.sr-only Home
+              li.nav-item.px-lg-3
+                a.nav-link href="#" Portfolio
+              li.nav-item.px-lg-3
+                a.nav-link href="#" Blog
+              li.nav-item.px-lg-3
+                a.nav-link href="#" About
+              li.nav-item.px-lg-3
+                a.nav-link href="#" Contact
+            ul.nav.navbar-nav.flex-row
+              li.nav-item.px-lg-2
+                a.nav-link href="#"
+                  img height="20" src="images/icons/search-icon.svg"
+              li.nav-item.border-right-gray
+                a.nav-link.px-3 href="#"
+                  img height="20" src="images/icons/basket-red.svg"
+
+    == Slim::Template.new('_footer.slim').render

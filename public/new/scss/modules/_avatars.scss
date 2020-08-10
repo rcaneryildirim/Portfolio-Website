@@ -1,0 +1,33 @@
+.avatar {
+  &.has-shadow {
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.40);
+  }
+}
+
+.avatar-rounded {
+  border-radius: 50%;
+}
+
+.avatar-84 {
+  width: 84px;
+  height: 84px;
+}
+
+.avatar-112 {
+  width: 112px;
+  height: 112px;
+}
+
+.stacked-avatars {
+  position: relative;
+  :first-child {
+    margin-right: -15px;
+  }
+  :nth-child(2) {
+    position: relative;
+    z-index: 557;
+  }
+  :last-child {
+    margin-left: -15px;
+  }
+}

@@ -1,0 +1,54 @@
+doctype html
+html lang="en"
+  head
+    == Slim::Template.new('_header.slim').render
+  body
+    == Slim::Template.new('_navigation.slim').render
+
+    .bg-white.py-10
+      .container
+        .row
+          .col-sm-9
+            h1.text-info.my-5 Installation
+            p.text-gray Rainbow UI KIT uses HTML5 doctype! So your HTML file should start with following rows:
+
+            div.bg-faded.p-3.radius5
+              p.text-gray  &lt;!--DOCTYPE html --&gt;
+              p.text-gray . . .
+
+            h2.my-5 Let's start
+            p.text-gray.my-3 First, you need to have the Rainbow UI KIT package or have access to its repository on Github.
+            p.text-gray Place the folder containing the Rainbow UI KIT into the root directory of your project. (You can change its location, but you should be careful with the URLs in that case).
+            p.text-gray In order to start developing  you only need to know HTML and CSS (and JavaScript, if you want do more interesting effects).
+
+            h4.my-5 First step. Put following CSS code into the header:
+            div.bg-faded.p-3.radius5
+              p.text-gray &ltlink href="css/rainbow-ui-kit.css" rel="stylesheet"&gt
+              p.text-gray &ltlink href="css/rainbow-ui-documentation.css" rel="stylesheet"&gt
+
+            h4.my-5 Second step. Insert the following JS script to the body:
+            div.bg-faded.p-3.radius5
+              p.text-gray.word-wrap &ltscript src="https://code.jquery.com/jquery-3.1.1.slim.min.js"&gt&lt/script&gt
+              p.text-gray.word-wrap &ltscript src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"&gt&lt/script&gt
+              p.text-gray &ltscript src="js/libs/bootstrap.js"&gt&lt/script&gt
+              p.text-gray &ltscript src="js/rainbow-ui-kit.js"&gt&lt/script&gt
+              p.text-gray.word-wrap &ltscript src="https://buy.epicpxls.com/external/epicpxls.js"&gt&lt/script&gt
+
+            h4.my-5 Third step.  In your main '.scss' file add the following lines of code:
+            div.bg-faded.p-3.radius5
+              p.text-gray @import "modules/heroes";
+              p.text-gray @import "modules/header";
+              p.text-gray @import "modules/web-app";
+              p.text-gray @import "modules/content-blocks";
+              p.text-gray . . .
+
+            h4.my-5 Finally, choose the block you want to use and follow the instructions for it!
+
+            h2.my-5 Responsive tip
+            p.text-gray All components of Rainbow UI KIT use responsive design. Don't forget to test the result.
+
+            h2.my-5 Have a Question?
+            p.text-gray If you have any questions don't be shy to chat with us in the chat section :)
+
+
+    == Slim::Template.new('_footer.slim').render

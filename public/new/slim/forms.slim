@@ -1,0 +1,383 @@
+doctype html
+html lang="en"
+  head
+    == Slim::Template.new('_header.slim').render
+  body
+    == Slim::Template.new('_navigation.slim').render
+
+    / Form 1
+    .rainbow-form.rainbow-form-1
+      .blue-shade
+      .form-content.container.d-flex.flex-column
+        .form-top
+          h2.fw-light Get in touch
+          p.fw-regular Do you have an awesome project for us, or just want to say hi? Go right ahead!
+        .card
+          .card-block
+            .row
+              .col-xs-12.col-sm-7
+                h4.fw-medium Send us a message
+                form.material-form
+                  .form-group
+                    input.form-control id="name" aria-describedby="nameHelp" type="text" required="true"
+                    label.float-label for="name" Name
+                  .form-group
+                    input.form-control id="subject" aria-describedby="subjectHelp" type="text" required="true"
+                    label.float-label for="subject" Subject
+                  .form-group
+                    textarea.form-control id="message" rows="4" required="true"
+                    label.float-label for="message" Message
+                  button.btn.btn-md.btn-rainbow-info.px-5 type="submit" Send
+              .col-xs-12.col-sm-4.offset-sm-1.aligh-items-center
+                h4.fw-medium.mt-5.mt-lg-0 Contact info
+                ul.list-unstyled.mt-5
+                  li
+                    img.m-1 width="20" src="images/icons/location-flat.svg"
+                    ' 8755 Bergnaum Fort
+                  li
+                    img.m-1 width="20" src="images/icons/mail-flat.svg"
+                    ' info@rainbowui.com
+                  li
+                    img.m-1 width="20" src="images/icons/phone-flat.svg"
+                    ' (+40) 750 888 444
+        .row.justify-content-center
+          .col-12.col-md-auto
+            div.m-5
+              a.mx-2 href="#"
+                img title="facebook" height="20" src="images/icons/facebook.svg"
+              a.mx-2 href="#"
+                img title="googleplus" height="20" src="images/icons/googleplus.svg"
+              a.mx-2 href="#"
+                img title="twitter" height="20" src="images/icons/twitter.svg"
+              a.mx-2 href="#"
+                img title="instagram" height="20" src="images/icons/instagram.svg"
+    / Form 2
+    .bg-white.py-5.py-lg-10.mt-5
+      .container.text-center
+        .card.card-white.width60.mx-auto.border-none
+          .card-block
+            div
+              h1.fw-light Get in touch
+              p.fw-regular.text-gray.mb-5 Do you have an awesome project for us, or just want to say hi? Go right ahead!
+              form
+                .row
+                  .form-group.col-6
+                    input.form-control placeholder="Name" type="text"
+                  .form-group.col-6
+                    input.form-control placeholder="Subject" type="text"
+                .row
+                  .form-group.col-12.my
+                    textarea.form-control placeholder="Message" required="" rows="6"
+                .row
+                  button.btn.btn-rainbow-warning.btn-lg.width100.mx-3.mt-3 type="submit" Send Message
+    / Form 3
+    .bg-white.mt-5.pt-10
+      .container.position-relatives
+        .row
+          .col-md-6.col-sm-12
+            img.width100 src="images/forms-img/headset.png"
+          button.btn.btn-lg.bg-1.m-2.px-5.position-absolute.fw-medium.radius30.text-white type="submit" $299
+          .col-md-6.col-sm-12
+            h1.fw-light.mt-5 Shipping details
+            form.material-form
+              .row
+                .form-group.col-sm-6.col-xs-12
+                  input.form-control id="full-name" aria-describedby="fullName" type="text" required="true"
+                  label.float-label.pl-3 for="full-name" Full Name
+                .form-group.col-sm-6.col-xs-12
+                  input.form-control id="phone" aria-describedby="phoneNumber" type="text" required="true"
+                  label.float-label.pl-3 for="phone" Phone Number
+
+            form.material-form
+              .row
+                .form-group.col-sm-6.col-xs-12
+                  select.form-control.text-gray
+                    option value="" disabled="disabled" selected="selected" City
+                    option New York City
+                    option Chicago
+                    option Miami
+                .form-group.col-sm-6.col-xs-12
+                  select.form-control.text-gray
+                    option value="" disabled="disabled" selected="selected" State
+                    option New York
+                    option California
+                    option Florida
+            form.material-form
+              .row
+                .form-group.col-12
+                  input.form-control id="address" aria-describedby="Address" type="text" required="true"
+                  label.float-label.pl-3 for="address" Address
+
+            label.custom-control.custom-checkbox.mt-3
+              input.custom-control-input type="checkbox" /
+              span.custom-control-indicator
+              span.custom-control-description.text-gray Notify me about the order status via SMS
+
+            .my-3.float-right
+              button.btn.btn-white.btn-lg.m-2.btn-width1.text-gray type="submit" Go back
+              button.btn.btn-rainbow-primary.btn-lg.m-2.btn-width1 type="submit" Continue
+    / Form 4
+    .bg-white.mt-5.pt-10
+      .container
+        .row
+          .col-md-6.col-sm-12
+            h1.fw-light.my-5 Payment details
+            div
+              label.custom-control.custom-radio
+                input#radio1.custom-control-input name="radio" type="radio" /
+                span.custom-control-indicator
+                span.custom-control-description.fw-medium Credit card
+              label.custom-control.custom-radio
+                input#radio2.custom-control-input name="radio" type="radio" /
+                span.custom-control-indicator
+                span.custom-control-description.fw-medium PayPal
+              label.custom-control.custom-radio
+                input#radio3.custom-control-input name="radio" type="radio" /
+                span.custom-control-indicator
+                span.custom-control-description.fw-medium Cash on delivery
+            form.material-form
+              div
+                .form-group
+                  input.form-control id="card" aria-describedby="card" type="text" required="true"
+                  label.float-label.ml-3 for="card" Credit card number
+              .row
+                .col
+                  .form-group
+                    select.form-control.text-gray
+                      option value="" disabled="disabled" selected="selected" Expiry day
+                      option 1
+                      option 2
+                      option 3
+                .col
+                  .form-group
+                    select.form-control.text-gray
+                      option value="" disabled="disabled" selected="selected" Expiry month
+                      option 1 (January)
+                      option 2 (February)
+                      option 3 (March)
+                .col
+                  .form-group
+                    input.form-control.text-gray aria-describedby="cvcHelp" placeholder="CVC code" type="text" /
+
+            .my-3.float-right.m-0
+              button.btn.btn-white.btn-lg.m-2.btn-width1.text-gray type="submit" Go back
+              button.btn.btn-rainbow-primary.btn-lg.m-2.btn-width1 type="submit" Download
+
+          .col-md-6.col-sm-12.position-relative
+            img.width100 src="images/forms-img/headset.png"
+            button.btn.btn-lg.bg-1.m-2.px-5.position-absolute.fw-medium.radius30.text-white.right0 type="submit" $299
+    / Form 5
+    .bg-9.mt-5.py-5.d-flex.align-items-center
+      .container
+        .card.card-white.width60.mx-auto.radius-0
+          div.border-gradient
+          .card-block.p-3
+            div.mt-3
+              img width="65" src="images/icons/logo-r1.svg"
+              h4.fw-medium.mt-3 Sign up
+            form.form autocomplete="off" role="form"
+              div.px-1.px-lg-5
+                .row
+                  .form-group.col-sm-6.col-xs-12
+                    label for="inputFirstName"
+                    input#inputFirstName.form-control.radius30 placeholder="First name" type="text" /
+                  .form-group.col-sm-6.col-xs-12
+                    label for="inputLastname"
+                    input#inputLastname.form-control.text-gray.radius30 placeholder="Last name" required="" type="text" /
+                .form-group
+                  label for="inputEmail"
+                  input#inputEmail.form-control.radius30 placeholder="Email Address" required="" type="email" /
+                .form-group
+                  label for="inputPassword"
+                  input#inputPassword.form-control.radius30 placeholder="Password" required="" type="password" /
+
+              button.btn.btn-rainbow-info.btn-lg.text-white.fw-medium.btn-width2.radius30.mt-3 type="submit" Sign up
+              .row.text-center
+                .col.text-gray.border-gray2.mt-2
+                  ' Already have an account?
+                  a href="#" Sign in
+              .row.text-center
+                .col.text-gray.mt-3
+                  ' By creating an account you agree to our
+                  a href="#" Terms & Policy
+    / Card 1
+    .bg-faded.mt-5.py-5
+      .container
+        .card.card-white.width60.mx-auto.radius-0
+          div.border-gradient
+          .card-block
+            div
+              img width="65" src="images/icons/logo-r1.svg"
+              h4.fw-medium.mt-3 Sign in to your account
+            form.form autocomplete="off" role="form"
+              div.px-1.px-lg-5
+                .form-group
+                  label for="inputEmail"
+                  input#inputEmail.form-control.border-blue placeholder="Email Address" required="" type="email" /
+                .form-group
+                  label for="inputPassword"
+                  input#inputPassword.form-control placeholder="Password" required="" type="password" /
+              .row.align-items-center
+                .col-sm-6.col-xs-12
+                  label.custom-control.custom-checkbox.mt-3
+                    input.custom-control-input type="checkbox" /
+                    span.custom-control-indicator
+                    span.custom-control-description Remember me
+                .col-sm-6.col-xs-12
+                  a href="#" Forgot Password?
+              button.btn.btn-rainbow-info.btn-lg.text-white.fw-medium.btn-width2.m-3 type="submit" Sign up
+              .row.text-center
+                .col.text-gray
+                  ' Don’t have an account?
+                  a href="#" Sign in
+    / Card 2
+    .bg-faded.mt-5.py-5
+      .container
+        .card.card-white.width60.mx-auto.radius-0
+          div.border-gradient
+          .card-block.p-3
+            div
+              img width="65" src="images/icons/logo-r1.svg"
+              h4.fw-medium.mt-3 Sign in to your account
+              form.material-form
+                div.px-1.px-lg-5
+                  .form-group
+                    input.form-control id="email" aria-describedby="Email" type="text" required="true"
+                    label.float-label for="email" Email Address
+                  .form-group
+                    input.form-control id="password" aria-describedby="Passwork" type="text" required="true"
+                    label.float-label for="password" Password
+              .row.align-items-center
+                .col-sm-6.col-xs-12
+                  label.custom-control.custom-checkbox.mt-3
+                    input.custom-control-input type="checkbox" /
+                    span.custom-control-indicator
+                    span.custom-control-description Remember me
+                .col-sm-6.col-xs-12
+                  a href="#" Forgot Password?
+              button.btn.btn-rainbow-info.btn-lg.text-white.radius30.fw-medium.btn-width2.m-3 type="submit" Sign up
+              .row.text-center
+                .col.text-gray.border-gray2
+                  ' Don’t have an account?
+                  a href="#" Sign in
+              p.bg-white.fw-medium.or-text OR
+              .row.mt-3
+                .col-md-6.col-sm-12
+                  button.btn-lg.text-white.radius30.fw-medium.btn-width2.m-2.btn-f.border-none type="submit" href="#" Facebook
+                .col-md-6.col-sm-12
+                  button.btn-lg.text-white.radius30.fw-medium.btn-width2.m-2.btn-g.border-none type="submit" Google Plus
+    / Card 3
+    .bg-faded.mt-5.py-5
+      .container
+        .card.card-white.width60.mx-auto.radius-0
+          div.border-gradient2
+          .card-block
+            div
+              img width="65" src="images/icons/logo-r2.svg"
+              h4.fw-medium.mt-3 Create account
+            form.form autocomplete="off" role="form"
+              div.px-1.px-lg-5
+                .form-group.has-danger
+                  label for="inputFullName"
+                  input#inputFullName.form-control.border-red placeholder="Full Name" required="" type="text" /
+                  .form-control-feedback.text-left.small Names must only contain letters
+                .form-group
+                  label for="inputEmail"
+                  input#inputEmail.form-control placeholder="Email address" required="" type="text" /
+                .form-group
+                  label for="inputPassword"
+                  input#inputPassword.form-control placeholder="Password" required="" type="text" /
+                .form-group
+                  label for="inputRetypePassword"
+                  input#inputRetypePassword.form-control placeholder="Retype password" required="" type="text" /
+              .row.text-center
+                .col.text-gray
+                  ' By creating an account you agree to our
+                  a href="#" Terms & Policies
+              button.btn.btn-rainbow-primary.btn-lg.text-white.fw-medium.btn-width2.m-3 type="submit" Create account
+              .row.text-center
+                .col.text-gray
+                  ' Already have an account?
+                  a href="#" Sign in
+    / Card 4
+    .bg-faded.mt-5.py-5
+      .container
+        .card.card-white.width60.mx-auto.radius-0
+          div.border-gradient3
+          .card-block
+            div
+              img width="65" src="images/icons/logo-r3.svg"
+              h4.fw-medium.mt-3 Reset password
+              p.text-gray Type your email to reset your password
+              form.material-form
+                .form-group.has-danger
+                  div.px-1.px-lg-5
+                    input.form-control#emailAddress aria-describedby="Email address" type="text" required="true"
+                    label.float-label.pl-1.pl-lg-5 for="emailAddress" Email address
+                    p.text-danger.small.border-top-red.width100.text-left Not a valid email
+              button.btn.btn-rainbow-warning.btn-lg.text-white.fw-medium.btn-width2.m-3 type="submit" Reset password
+    / Card 5
+    .bg-faded.mt-5.py-5
+      .container
+        .card.card-white.width60.mx-auto.radius-0
+          div.border-gradient
+          .card-block
+            div
+              h4.fw-medium.mt-3 Reset password
+              p.text-gray Enter the 6 digit code we sent you via email
+              form.form autocomplete="off" role="form"
+                .form-group
+                  div.px-1.px-lg-5
+                    label for="inputCode"
+                    input#inputCode.form-control required="" type="text"
+              button.btn.btn-rainbow-info.btn-lg.text-white.fw-medium.m-3.btn-width1 type="submit" Submit
+              .row.text-center
+                .col.text-gray.mb-5
+                  ' Haven’t received a code?
+                  a href="#" Resend Code
+    / Input style guide
+    .bg-white.my-10.py-10
+      .container
+        h1.fw-lignt.text-center Input style guide
+        .row.mt-5
+          .col-md-6.col-sm-12
+            form.form autocomplete="off" role="form"
+              .form-group
+                label for="inputDefaultState"
+                input#inputDefaultState.form-control placeholder="Default state" required="" type="text"
+              .form-group
+                label for="inputDefaultState"
+                input#inputDefaultState.form-control.border-blue placeholder="Active state" required="" type="text" autofocus="true"
+              .form-group.has-danger
+                label for="inputDefaultState"
+                input#inputDefaultState.form-control.border-red placeholder="Something’s wrong" required="" type="text"
+                .form-control-feedback.small This is an error message
+              .form-group.has-success
+                label.form-control-label for="inputSuccess1"
+                input#inputSuccess1.form-control.border-green placeholder="Available" type="text"
+              .form-group
+                label for="inputDefaultState"
+                input#inputDefaultState.form-control.bg-faded.border-none placeholder="Disabled state" required="" type="text" disabled="true"
+
+          .col-md-6.col-sm-12
+            form.material-form
+              .form-group
+                input.form-control#defaultState aria-describedby="Default state" type="text" required="true"
+                label.float-label for="defaultState" Default state
+              .form-group.border-bottom-blue
+                input.form-control#activeState aria-describedby="Default state" type="text" required="true"
+                label.float-label for="activeState" Active state
+                / autofocus="true"
+              .form-group
+                input#inputDefaultState.form-control placeholder="Something’s wrong" required="" type="text" /
+                label for="inputDefaultState"
+                p.text-danger.small.border-top-red.width100.text-left This is an error message
+              .form-group.border-bottom-green
+                input.form-control#available aria-describedby="Default state" type="text" required="true"
+                label.float-label for="available" Available
+              .form-group
+                input.form-control#disabled aria-describedby="Default state" type="text" required="true" disabled="true"
+                label.float-label for="disabled" Disabled
+
+
+    == Slim::Template.new('_footer.slim').render

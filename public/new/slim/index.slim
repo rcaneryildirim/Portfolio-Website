@@ -1,0 +1,173 @@
+doctype html
+html lang="en"
+  head
+    == Slim::Template.new('_header.slim').render
+  body
+    == Slim::Template.new('_navigation.slim').render
+    / Section 1
+    .bg-1
+      .container
+        div.main-header
+          h1.mb-0.header-text Rainbow UI
+          h2.text-white.fw-normal.ml-2 UI KIT FOR LANDING
+          h5.fw-normal.ml-2.text-grey Bootstrap 4 Theme
+    / Section 2
+    .bg-1
+      table.table
+        tr
+          td.p-0.border-0.valign-bottom
+            img.width100 src="images/presentation/presentation_1/hero-10.png"
+          td.p-0.border-0.px-3.valign-bottom
+            img.width100 src="images/presentation/presentation_1/hero-6.png"
+          td.p-0.border-0.valign-bottom
+            img.width100 src="images/presentation/presentation_1/hero-9.png"
+
+      table.table.mb-0
+        tr
+          td.p-0.border-0.valign-bottom
+            img.width100 src="images/presentation/presentation_1/block-10.png"
+          td.p-0.border-0.px-3.valign-bottom
+            img.width100 src="images/presentation/presentation_1/block-3.png"
+          td.p-0.border-0.valign-bottom
+            img.width100 src="images/presentation/presentation_1/block-6.png"
+
+    / Section 3
+    .bg-white.pt-10
+      .container.z-index4.position-relative
+        p.scalable-header.text-center.mx-auto.mw-100.fw-bold.mt-10.mt-md-4.top20 CRAFTED
+        .d-flex.justify-content-center
+          img.mr-5 src="images/presentation/presentation_1/sketch.svg"
+          img.ml-5 src="images/presentation/presentation_1/psd.svg"
+        h1.fw-light.text-center.my-5
+          | Build on a
+          span.text-info.fw-bold  Bootstrap
+          |  grid
+        .d-flex.mt-10
+          div.minw-0
+            img.mw-100 src="images/presentation/presentation_1/app.png"
+    / Section 4
+    .bg-faded.pt-5
+      .container.h-700.z-index4.position-relative.d-flex.align-items-center
+        .row.text-center.my-5
+          .col-sm-12.col-md-4
+            .circle-icon-container.mx-auto.btn-rainbow-info
+              img src="images/presentation/presentation_1/vector.svg" width="48" height="48"
+            h3.fw-normal.my-3 Vector shapes
+            p.px-3 100% vectorial elements. Easy to edit content if necesarry
+
+          .col-sm-12.col-md-4
+            .circle-icon-container.mx-auto.btn-rainbow-primary
+              img src="images/presentation/presentation_1/layers.svg" width="48" height="48"
+            h3.fw-normal.my-3 Organized layers
+            p.px-3 Grouped and organized elements. Easy to find and move.
+
+          .col-sm-12.col-md-4
+            .circle-icon-container.mx-auto.btn-rainbow-warning
+              img src="images/presentation/presentation_1/pin.svg" width="48" height="48"
+            h3.fw-normal.my-3 Consistency
+            p.px-3 Consistent fonts, colors and styles. Easy to combine elements.
+
+        p.scalable-header.text-center.mx-auto.mw-100.fw-bold.mt-8.mt-md-4 FEATURES
+    / Headers and footers
+    .bg-faded
+      .container
+        h1.fw-light.text-center.py-5 Headers and footers
+        .row
+          .col-sm-12.col-md-6.pt-3
+            img.mw-100 src="images/presentation/presentation_2/headers.png"
+          .col-sm-12.col-md-6.pt-3
+            img.mw-100 src="images/presentation/presentation_2/footers.png"
+    / Heroes
+    .bg-faded.py-5
+      .container
+        h1.fw-light.text-center.py-5 Heroes
+        .row
+          .col-sm-12.col-md-6.pt-3
+            img.mw-100 src="images/presentation/presentation_2/hero-1.png"
+          .col-sm-12.col-md-6.pt-3
+            img.mw-100 src="images/presentation/presentation_2/hero-2.png"
+        .row
+          .col-sm-12.col-md-6.pt-3
+            img.mw-100 src="images/presentation/presentation_2/hero-3.png"
+          .col-sm-12.col-md-6.pt-3
+            img.mw-100 src="images/presentation/presentation_2/hero-4.png"
+        .row
+          .col-sm-12.col-md-6.pt-3
+            img.mw-100 src="images/presentation/presentation_2/hero-5.png"
+          .col-sm-12.col-md-6.pt-3
+            img.mw-100 src="images/presentation/presentation_2/hero-6.png"
+        .row
+          .col-sm-12.col-md-6.pt-3
+            img.mw-100 src="images/presentation/presentation_2/hero-7.png"
+          .col-sm-12.col-md-6.pt-3
+            img.mw-100 src="images/presentation/presentation_2/hero-8.png"
+        .row
+          .col-sm-12.col-md-6.pt-3
+            img.mw-100 src="images/presentation/presentation_2/hero-9.png"
+          .col-sm-12.col-md-6.pt-3
+            img.mw-100 src="images/presentation/presentation_2/hero-10.png"
+    / Content blocks
+    .bg-faded.py-5
+      .container
+        h1.fw-light.text-center.py-5 Content blocks
+        .row
+          .col-sm-12.col-md-6
+            img.mw-100.pt-3 src="images/presentation/presentation_3/block-1.png"
+            img.mw-100.pt-3 src="images/presentation/presentation_3/block-3.png"
+            img.mw-100.pt-3 src="images/presentation/presentation_3/block-5.png"
+            img.mw-100.pt-3 src="images/presentation/presentation_3/block-7.png"
+            img.mw-100.pt-3 src="images/presentation/presentation_3/block-9.png"
+          .col-sm-12.col-md-6
+            img.mw-100.pt-3 src="images/presentation/presentation_3/block-2.png"
+            img.mw-100.pt-3 src="images/presentation/presentation_3/block-4.png"
+            img.mw-100.pt-3 src="images/presentation/presentation_3/block-6.png"
+            img.mw-100.pt-3 src="images/presentation/presentation_3/block-8.png"
+            img.mw-100.pt-3 src="images/presentation/presentation_3/block-10.png"
+    / Forms
+    .bg-faded.py-5
+      .container
+        h1.fw-light.text-center.py-5 Forms
+        .row
+          .col-sm-12.col-md-6
+            img.mw-100.pt-3 src="images/presentation/presentation_4/form-1.png"
+            img.mw-100.pt-3 src="images/presentation/presentation_4/form-3.png"
+            .row
+              .col-sm-6
+                img.mw-100.pt-3 src="images/presentation/presentation_4/form-8.png"
+              .col-sm-6
+                img.mw-100.pt-3 src="images/presentation/presentation_4/form-7.png"
+            .row
+              .col-sm-6
+                img.mw-100.pt-3 src="images/presentation/presentation_4/form-6.png"
+              .col-sm-6
+                img.mw-100.pt-3 src="images/presentation/presentation_4/form-9.png"
+
+          .col-sm-12.col-md-6
+            img.mw-100.pt-3 src="images/presentation/presentation_4/form-2.png"
+            img.mw-100.pt-3 src="images/presentation/presentation_4/form-4.png"
+            img.mw-100.pt-3 src="images/presentation/presentation_4/form-5.png"
+            .row
+              .col-sm-6
+                img.mw-100.pt-3 src="images/presentation/presentation_4/form-10.png"
+    / Sample Pages
+    .bg-faded.pt-5.text-center
+      h1.fw-light.py-5 Sample pages
+      .mb-10
+        img.mw-100 src="images/presentation/presentation_5/webapp.jpg"
+      .bg-charcoal.py-10
+        img.mw-100 src="images/presentation/presentation_5/fashion.jpg"
+      .my-10
+        img.mw-100 src="images/presentation/presentation_5/app.jpg"
+      .bg-charcoal.py-10
+        img.mw-100 src="images/presentation/presentation_5/mobile.jpg"
+
+    .bg-white.py-10.z-index4.position-relative
+      div.text-center
+        h1.fw-light Thanks for Watching!
+        p.text-gray.mt-5
+          | MADE WITH
+          span.text-danger  &#10084;
+          |  BY
+          a<> href="https://www.epicpxls.com" EPICPXLS
+      p.scalable-header.text-center.mx-auto.mw-100.fw-bold.mt-8.mt-md-4 EPIC CODERS
+    == Slim::Template.new('_footer.slim').render

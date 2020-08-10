@@ -1,0 +1,84 @@
+$white:  #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6B717B !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #282B35 !default;
+$black:  #000 !default;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+    primary: $blue,
+    secondary: $gray-600,
+    success: $green,
+    info: $cyan,
+    warning: $yellow,
+    danger: $red,
+    light: $gray-100,
+    gray: $gray-600,
+    dark: $gray-800,
+    charcoal: $gray-900
+), $theme-colors);
+
+//------------------------
+//**= BOOTSTRAP OVERWRITES
+//------------------------
+
+$line-height-base: 1.75;
+
+$headings-font-weight: 200;
+$headings-line-height: 1.25;
+
+$input-btn-padding-y-lg:    1rem;
+$input-btn-padding-x-lg:    1.5rem;
+$btn-font-weight: 500;
+
+$font-size-h1: 3rem;
+$font-size-lg: 1.125rem;
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: (
+	80: 80px,
+	100: 100px,
+	115: 115px,
+	150: 150px,
+	180: 180px,
+	220: 220px,
+	280: 280px,
+	320: 320px
+) !default;
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+$spacer: 1rem !default;
+$spacers: (
+		0: 0,
+		1: ($spacer * .25),
+		2: ($spacer * .5),
+		3: $spacer,
+		4: ($spacer * 1.5),
+		5: ($spacer * 3),
+		8: ($spacer * 6),
+		10: ($spacer * 10),
+		15: ($spacer * 15),
+		20: ($spacer * 20)
+)

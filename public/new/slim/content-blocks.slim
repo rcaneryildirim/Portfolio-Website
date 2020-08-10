@@ -1,0 +1,200 @@
+doctype html
+html lang="en"
+  head
+    == Slim::Template.new('_header.slim').render
+  body
+    == Slim::Template.new('_navigation.slim').render
+
+    / Block 1
+    .bg-white.text-center.py-10
+      .container
+        .row
+          .col-sm-12.col-md-4
+            .circle-icon-container.mx-auto.btn-rainbow-info
+              img src="images/icons/flat-msg.svg" width="48" height="48"
+            h3.fw-light.mt-3 Messages
+            p.text-gray.mt-3.px-3 Chat via personalized messages, making your conversations unique.
+          .col-sm-12.col-md-4
+            .circle-icon-container.mx-auto.btn-rainbow-primary
+              img src="images/icons/flat-contacts.svg" width="42" height="42"
+            h3.fw-light.mt-3 Contacts
+            p.text-gray.mt-3.px-3 Sync contacts from your phone and keep in touch with your friends.
+          .col-sm-12.col-md-4
+            .circle-icon-container.mx-auto.btn-rainbow-warning
+              img src="images/icons/flat-groups.svg" width="48" height="48"
+            h3.fw-light.mt-3 Groups
+            p.text-gray.mt-3.px-3 Create groups with your best friends or team mates.
+
+    / Block 2
+    .bg-white.py-10.my-5
+      .container
+        .row.align-items-center
+          .col-sm-12.col-md-6
+            .iphone-white.mx-auto
+              .iphone-speaker
+              .iphone-front-camera
+              .iphone-screen
+                img src="images/heroes-img/messages-app-screen.jpg"
+              .iphone-home-button
+          .col-sm-12.col-md-6.mt-5
+            .btn-rainbow-info.circle-icon-container
+              img src="images/icons/flat-msg.svg" width="48" height="48"
+            h2.fw-light.mt-3.text-info Messages
+            p.text-gray.mt-3 Make each conversation unique. Express yourself better by personalizing your messages with stickers, emojis and lovely text styles. Say more, do more!
+
+    / Block 3
+    .bg-white.py-10.my-5
+      .container
+        .row.align-items-center
+          .col-sm-12.col-md-6
+            .circle-icon-container.btn-rainbow-primary
+              img src="images/icons/flat-contacts.svg" width="42" height="42"
+            h3.fw-light.mt-3.text-primary Contacts
+            p.text-gray.mt-3.mb-5 Do you have hundreds of friends and want to be able to talk to them all? No problem! With SmartChat you can add anyone in your contact list who uses the app.
+
+          .col-sm-12.col-md-6
+            .iphone-white.mx-auto
+              .iphone-speaker
+              .iphone-front-camera
+              .iphone-screen
+                img src="images/heroes-img/contacts-app-screen.jpg"
+              .iphone-home-button
+
+    / Block 4
+    .bg-1.py-10.my-5
+      .container.text-center
+        h2.text-white.fw-light.mt-3 Download the app
+        p.text-white.mt-3 Grab SmartChat from Google Play or App Store and start chatting with your friends.
+        .d-block.p-4
+          a.btn.btn-lg.btn-white.box-shadow.minw-xs-180.m-3 href="#"
+            img.mr-2.mb-1 src="images/icons/apple.svg"
+            span Google Play
+          a.btn.btn-lg.btn-white.box-shadow.minw-xs-180.m-3 href="#"
+            img.mr-2.mb-1 src="images/icons/google_play.svg"
+            span App Store
+
+    / Block 5
+    .bg-2.py-10.my-5
+      .container.text-center
+        h4.text-white.fw-heavy.mt-sm-1.mt-lg-3.mb-5 NEWSLETTER
+        p.scalable-header.mx-auto.mw-100.fw-bold.mt-8.mt-md-4 SUBSCRIBE
+        .row.form
+          .col-9.mx-auto.mt-4
+            .form-group.stacked-btn-field
+              input.form-control.form-control-hero placeholder="Your email address" type="text"
+              a.btn.btn-rounded.btn-stacked.responsive-input-btn.moz-fix.btn-rainbow-warning href="#" Start free trial
+
+    / Block 6
+    .bg-3.py-10.my-5
+      .container
+        .row.align-items-center
+          .col-sm-12.col-md-5
+            h2.text-white.fw-light Design & Share
+            p.text-white.mb-5.mt-3 Sharing your designs with others has never been this easy. Your team members and clients can comment on your uploaded screens and give you real-time feedback and suggestions. Of course, you will be notified each time they do.
+          .col-sm-12.col-md-7
+            img.mw-100 src="images/heroes-img/content-window.png"
+
+    / Block 7
+    .bg-white.my-5.pt-10.z-index4.position-relative
+      .container
+        p.scalable-header.text-center.mx-auto.mw-100.fw-bold.mt-8.mt-md-4 ABOUT
+        .row.align-items-center
+          .col-sm-12.col-md-6
+            img.mw-100 src="images/heroes-img/model.png"
+          .col-sm-12.col-md-6
+            h4.fw-heavy.mt-3 ABOUT ME
+            img.mr-2.mb-2.has-shadow width="42" src="images/icons/red-border.svg"
+            p.text-gray.mb-3 Skydiver, ninja, guitarist, Swiss design-head and communicator, collector, connector, creator. Operating at the junction of minimalism and mathematics to develop visual solutions that inform and persuade. I prefer clear logic to decoration.
+            .row.pb-10
+              a.m-3 href="#"
+                img title="facebook" height="20" src="images/icons/facebook.svg"
+              a.m-3 href="#"
+                img title="googleplus" height="20" src="images/icons/googleplus.svg"
+              a.m-3 href="#"
+                img title="twitter" height="20" src="images/icons/twitter.svg"
+              a.m-3 href="#"
+                img title="instagram" height="20" src="images/icons/instagram.svg"
+
+    / Block 8
+    .bg-white.my-5.position-relative
+      .row.align-items-center.m-0
+        .col-sm-12.col-lg-6.p-0
+          img.width100 src="images/web-app-img/laptop.png"
+        .col-sm-12.col-lg-6
+          h2.fw-regular.px-3.px-lg-10 We encourage creativity
+          p.text-gray.mt-3.px-3.px-lg-10 Skydiver, ninja, guitarist, Swiss design-head and communicator, collector, connector, creator. Operating at the junction of minimalism and mathematics to develop visual solutions that inform and persuade. I prefer clear logic to decoration.
+        .circle-icon-container.btn-rainbow-primary.has-shadow.play-btn
+          img src="images/icons/play-btn.svg" width="42" height="42"
+
+    / Block 9
+    .bg-white.py-10.my-5
+      .container
+        .row.align-items-center
+          .col-sm-12.col-md-5
+            h2.text-primary.fw-light Track your progress
+            p.text-gray.mb-5.mt-3 Sharing your designs with others has never been this easy. Your team members and clients can comment on your uploaded screens and give you real-time feedback and suggestions. Of course, you will be notified each time they do.
+          .col-sm-12.col-md-7
+            img.mw-100.mt-2 src="images/heroes-img/chart.png"
+
+    / Block 10
+    .rainbow-hero-4.py-10.my-5
+      .top-right-shade
+      .bottom-shade
+      .container.position-relative
+        h2.text-white.fw-light.text-center.mt-3 Find the perfect employee
+        p.text-white.mt-3.mb-5.width60.mx-auto We have a rich user data base with some of the best candidates you can find. Browse profiles of people that excel in their filed of work.
+
+        .row.d-flex
+          .card-block.bg-white.m-3.flex-1.rounded.width250.d-flex.flex-column.p-0.align-self-center.box-shadow
+            img.align-self-center.is-circle.mt-5.mb-2 src="images/avatars/avatar001.png"
+              h4.text-center.fw-medium Shane Mathis
+              p.text-center.text-gray.small Marketing expert
+              .d-flex.align-items-center.flex-row.justify-content-center.flex-wrap.mb-3
+                a.skill-btn.small href="#"  marketing
+                a.skill-btn.small href="#"  advertising
+                a.skill-btn.small href="#"  email marketing
+                a.text-info href="#" +8
+              a.btn.mt-auto.width100.remove-top-radius.yellow-btn href="#" Contact
+
+          .card-block.bg-white.m-3.flex-1.rounded.width250.d-flex.flex-column.p-0.align-self-center.box-shadow
+            img.align-self-center.mt-3.is-circle.mt-5.mb-2 src="images/avatars/avatar002.png"
+              h4.text-center.fw-medium Minerva Holland
+              p.text-center.text-gray.small Senior UI/UX Designer
+              .d-flex.align-items-center.flex-row.justify-content-center.flex-wrap.mb-3
+                a.skill-btn.small href="#" UI
+                a.skill-btn.small href="#" UX
+                a.skill-btn.small href="#" mobile design
+                a.skill-btn.small href="#" photoshop
+                a.skill-btn.small href="#" sketch
+                a.text-info href="#" +4
+              a.btn.mt-auto.width100.remove-top-radius.yellow-btn href="#" Contact
+
+          .card-block.bg-white.m-3.flex-1.rounded.width250.d-flex.flex-column.p-0.align-self-center.box-shadow
+            img.align-self-center.mt-3.is-circle.mt-5.mb-2 src="images/avatars/avatar003.png"
+              h4.text-center.fw-medium Carlos Freeman
+              p.text-center.text-gray.small Front-end Developer
+              .d-flex.align-items-center.flex-row.justify-content-center.flex-wrap.mb-3
+                a.skill-btn.small href="#"  HTML
+                a.skill-btn.small href="#"  CSS
+                a.skill-btn.small href="#"  javascript
+                a.skill-btn.small href="#"  PHP
+                a.skill-btn.small href="#"  Linux
+                a.skill-btn.small href="#"  .Net
+                a.text-info href="#" +5
+              a.btn.mt-auto.width100.remove-top-radius.yellow-btn href="#" Contact
+
+          .card-block.bg-white.m-3.flex-1.rounded.width250.d-flex.flex-column.p-0.align-self-center.box-shadow
+            img.align-self-center.mt-3.is-circle.mt-5.mb-2 src="images/avatars/avatar004.png"
+              h4.text-center.fw-medium Dora Massey
+              p.text-center.text-gray.small Blogger
+              .d-flex.align-items-center.flex-row.justify-content-center.flex-wrap.mb-3
+                a.skill-btn.small href="#"  articles
+                a.skill-btn.small href="#"  blog posts
+                a.skill-btn.small href="#"  web content
+                a.skill-btn.small href="#"  writing
+                a.text-info href="#" +6
+              a.btn.mt-auto.width100.remove-top-radius.yellow-btn href="#" Contact
+
+
+      / Add footer template below
+      == Slim::Template.new('_footer.slim').render

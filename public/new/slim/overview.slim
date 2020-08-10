@@ -1,0 +1,32 @@
+doctype html
+html lang="en"
+  head
+    == Slim::Template.new('_header.slim').render
+  body
+    == Slim::Template.new('_navigation.slim').render
+
+    .bg-white.py-10
+      .container
+        .row
+          .col-sm-9
+            h1.text-info.my-5 User Guide
+            p.text-gray Thank you for purchasing Rainbow UI KIT. We hope that you’ll like this product and we did our best to make your job with Rainbow UI KIT easy and clear. Now you have all the components that will help you to build your Startup website. Try to combine and modify them the way you want.
+            p.text-gray.my-3
+              | We’ll be glad to see what you have managed to create. So, don’t be shy to share your results
+              a.text-info href="https://www.epicpxls.com/"  with us.
+
+            p.text-gray.mb-5 In this user guide we’ve collected the description and installation items of all the UI Kit components that will guide you from designing up to code.
+
+            div.my-5
+              a.btn.btn-lg.btn-white.card-shadow.minw-xs-220.radius30.text-info href="how-to-install.html" Let's Start
+        .row.py-5
+          .col-sm-4
+            h2.my-3 Installation
+            p.text-gray Installation of Rainbow UI KIT doesn’t take much of your time. It’s easy!
+            a.text-info href="how-to-install.html" Learn more
+          .col-sm-4
+            h2.my-3 Have a Question?
+            p.text-gray If you have any questions don't be shy to chat with us in the chat section :)
+
+
+    == Slim::Template.new('_footer.slim').render

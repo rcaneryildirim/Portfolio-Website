@@ -1,0 +1,61 @@
+.btn-rainbow-primary {
+  @include button-variant(#fff, #336DFF, #7963FF);
+  background-image: linear-gradient(90deg, #336DFF 0%, #7963FF 100%);
+  border-width: 0;
+  background-clip: padding-box;
+  &.has-shadow {
+    box-shadow: 0 4px 12px 0 rgba(26,41,211,0.60);
+  }
+  &:hover {
+    background-image: linear-gradient(-90deg, #336DFF 0%, #7963FF 100%);
+  }
+}
+
+.btn-rainbow-info {
+  @include button-variant(#fff, #31DAFF, #3AF3FF);
+  background-image: linear-gradient(90deg, #31DAFF 0%, #538DFF 100%);
+  background-clip: padding-box;
+  border-width: 0;
+  &:hover {
+    background-image: linear-gradient(-90deg, #31DAFF 0%, #538DFF 100%);
+  }
+}
+
+.btn-rainbow-warning {
+  @include button-variant(#fff, #FFA466, #FF5360);
+  background-image: linear-gradient(90deg, #FFA466 0%, #FF5360 100%);
+  border-width: 0;
+  background-clip: padding-box;
+  &.btn-stacked {
+    @include button-size(14px, 30px, 16px, 1.5, 30px);
+  }
+  &.has-shadow {
+    box-shadow: 0 4px 12px 0 rgba(255,55,68,0.60);
+  }
+  &:hover {
+    background-image: linear-gradient(-90deg, #FFA466 0%, #FF5360 100%);
+  }
+}
+
+.btn-white {
+  @include button-variant(#383C41, #ffffff, #ffffff);
+  &.has-shadow {
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.10);
+  }
+}
+
+.btn-outline {
+  &.btn-lg {
+    @include button-size(0.875rem, $input-btn-padding-x-lg, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
+  }
+}
+
+.btn-outline-blue {
+  @include button-outline-variant(#47AAFF, #ffffff);
+  border-width: 2px;
+}
+
+.btn-outline-white {
+  @include button-outline-variant(#fff, $gray-800);
+  border-width: 2px;
+}

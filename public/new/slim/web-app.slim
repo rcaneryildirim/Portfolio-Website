@@ -1,0 +1,185 @@
+doctype html
+html lang="en"
+  head
+    == Slim::Template.new('_header.slim').render
+  body
+    == Slim::Template.new('_navigation.slim').render
+    / Section 1
+    .rainbow-hero.rainbow-hero-4
+      .top-left-shade
+      .top-right-shade
+      .bottom-shade
+      .hero-content.container.d-flex.flex-column
+        nav.navbar.navbar-inverse.justify-content-between
+          a.navbar-brand href="#"
+            img src="images/main/logo-white.png" srcset="images/main/logo-white@2x.png 2x, images/main/logo-white@3x.png 3x"
+          .flex-row
+            a.nav-link.d-inline href="#"
+              img height="20" src="images/icons/search-white.svg"
+            button.navbar-toggler aria-controls="navbar6" aria-expanded="false" aria-label=("Toggle navigation") data-target="#collapsingNavbar3" data-toggle="collapse" type="button"
+              span.navbar-toggler-icon
+        #collapsingNavbar3.collapse
+          .p-3
+            h3 Collapsed content
+
+        .hero-info.container.my-auto
+          .row.justify-content-center
+            .stacked-avatars
+              img.avatar.avatar-rounded.avatar-84.has-shadow src="images/avatars/avatar-2.jpg"
+              img.avatar.avatar-rounded.avatar-112.has-shadow src="images/avatars/avatar-1.jpg"
+              img.avatar.avatar-rounded.avatar-84.has-shadow src="images/avatars/avatar-3.jpg"
+          .row.justify-content-md-center.mt-4
+            .col-12.text-center
+              h1 Connect with your team
+              p.mt-4 Calls, messages, attachments and much more. All you need for a perfect work environment with your team.
+          .row.form
+            .col-9.mx-auto.mt-4
+              .form-group.stacked-btn-field
+                input.form-control.form-control-hero placeholder="Your email address" type="text"
+                a.btn.btn-rounded.btn-stacked.responsive-input-btn.moz-fix.btn-rainbow-warning href="#" Start free trial
+    / Section 2
+    .bg-white.py-10
+      .container
+        .row
+          .col-sm-12.col-md-4
+            img.mt-2 width="54" src="images/icons/portfolio.svg"
+            h3.text-info.fw-regular.mt-3 Strong portfolios
+            p.mt-2.fw-regular.text-gray People like a “special” price or exclusive offer directed only to them. Most Industrial and Manufacturing equipment buyers are seeking to be told that they are special.
+          .col-sm-12.col-md-4
+            img.mt-2 width="54" src="images/icons/chat.svg"
+            h3.text-info.fw-regular.mt-3 1 to 1 and group chat
+            p.mt-2.fw-regular.text-gray Research in advertising is done in order to produce better advertisements that are more efficient in motivating customers to buy a product or a service.
+          .col-sm-12.col-md-4
+            img.mt-2 width="54" src="images/icons/email.svg"
+            h3.text-info.fw-regular.mt-3 Email notifications
+            p.mt-2.fw-regular.text-gray You have just invested in a new vehicle, the one of your dreams, and you take it on a trip across Canada. You only put gas in it and drive sightseeing and following your nose.
+        .row
+          .col-sm-12.col-md-4
+            img.mt-2 width="54" src="images/icons/tutorials.svg"
+            h3.text-info.fw-regular.mt-3 High quality tutorials
+            p.mt-2.fw-regular.text-gray Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola, body muscles and holding ones own breath.
+          .col-sm-12.col-md-4
+            img.mt-2 width="54" src="images/icons/photos.svg"
+            h3.text-info.fw-regular.mt-3 Stunning stock photos
+            p.mt-2.fw-regular.text-gray Planning to visit Las Vegas or any other vacational resort where casinos are a major portion of their business? I have just the thing for you.
+          .col-sm-12.col-md-4
+            img.mt-2 width="54" src="images/icons/watch.svg"
+            h3.text-info.fw-regular.mt-3 Apple watch ready
+            p.mt-2.fw-regular.text-gray WordPress, the premier free open-source blogging utility, has gone through several upgrades in its life. Today it’s one of the most popular blogging tools on the Internet.
+    / Section 3
+    .bg-white.position-relative
+      .row.align-items-center.m-0
+        .col-sm-12.col-lg-6.p-0
+          img.width100 src="images/web-app-img/laptop.png"
+        .col-sm-12.col-lg-6
+          h2.fw-regular.px-3.px-lg-10.mt-3 We encourage creativity
+          p.text-gray.mt-3.px-3.px-lg-10 Skydiver, ninja, guitarist, Swiss design-head and communicator, collector, connector, creator. Operating at the junction of minimalism and mathematics to develop visual solutions that inform and persuade. I prefer clear logic to decoration.
+        .circle-icon-container.btn-rainbow-primary.has-shadow.play-btn
+          img src="images/icons/play-btn.svg" width="42" height="42"
+    / Section 4
+    .bg-white.pt-10
+      .container
+        .row.align-items-center
+          .col-sm-12.col-md-5
+            img.mx-5.mb-3 src="images/icons/statistic.svg"
+          .col-sm-12.col-md-7
+            h2.fw-light Detailed statistics
+            p.mt-3.fw-regular.text-gray Do you want to download free song for ipod? If so, reading this article could save you from getting in to a lot of trouble! Downloading music to your Ipod has more than one pitfall associated with it, and this article will tell you the best way to download free song for iPod.
+      img.mt-5.width100 src="images/icons/top.svg"
+    / Section 5
+    .bg-6.py-10.z-index4.position-relative
+      .container
+        h4.text-white.text-center.fw-heavy.mt-3 WHAT OTHERS SAY
+        p.scalable-header.text-center.mx-auto.mw-100.fw-bold.mt-5 FEEDBACK
+
+        .row.d-flex.mt-5.mt-lg-10
+          .card-block.m-2.bg-white.flex-1.rounded.width250.align-self-center
+            .row.p-3
+              img width="66" height="66" src="images/avatars/avatar-4.png"
+              .pl-3
+                h4.fw-medium Carlos Freeman
+                p.text-gray @carlosfreeman
+            a.text-info href="#"
+              | @Rainbow_ui
+            p.float-left
+            | Fantastic services and professional staff! It was a pleasure working with you.
+
+          .card-block.m-2.bg-white.flex-1.rounded.width250.align-self-center
+            .row.p-3
+              img width="66" height="66" src="images/avatars/avatar-5.png"
+              .pl-3
+                h4.fw-medium Minerva Holland
+                p.text-gray @mnrv
+            a.text-info href="#"
+              | @Rainbow_ui
+            p.float-left
+            | Looking forward to our next collaboration! Thank you for this wonderful collaboration.
+
+          .card-block.m-2.bg-white.flex-1.rounded.width250.align-self-center
+            .row.p-3
+              img width="66" height="66" src="images/avatars/avatar-6.png"
+              .pl-3
+                h4.fw-medium Dora Massey
+                p.text-gray @addicted_designer
+            a.text-info href="#"
+              | @Rainbow_ui
+            p.float-left
+            | Working with you guys was a great experience! You are on the top of my “to work with” list.
+    / Section 6
+    .bg-white.py-5.py-lg-10
+      .container.
+        p.text-gray.fw-medium.text-center SOUNDS GOOD, DOESN'T IT?
+        h3.text-center.fw-regular.my-3 You don’t have take our word for it. Start a free trial and you will see for yourself.
+
+        .row.form.py-3
+          .col-9.mx-auto.mt-4
+            .form-group.stacked-btn-field
+              input.form-control.form-control-hero placeholder="Your email address" type="text"
+              a.btn.btn-rounded.btn-stacked.responsive-input-btn.moz-fix.btn-rainbow-warning href="#" Start free trial
+    / Section 7
+    .bg-faded.py-5
+      .container
+        .d-flex.style-row.flex-wrap.justify-content-between
+          .flex-1
+            img.mb-2 src="images/main/logo-rainbow.png" srcset="images/main/logo-rainbow@2x.png 2x, images/main/logo-rainbow@3x.png 3x"
+            p.text-gray.mb-0.small &copy; Copyright 2017. All rights reserved
+            ul.mt-3.p-0
+              a.mr-2 href="#"
+                img title="facebook" height="20" src="images/icons/facebook.svg"
+              a.mx-2 href="#"
+                img title="googleplus" height="20" src="images/icons/googleplus.svg"
+              a.mx-2 href="#"
+                img title="twitter" height="20" src="images/icons/twitter.svg"
+              a.mx-2 href="#"
+                img title="instagram" height="20" src="images/icons/instagram.svg"
+          .flex-1.d-flex.style-row.justify-content-between.flex-basis
+            .flex-column
+              p.fw-bold PRODUCT
+              p
+                a.text-gray.small href="#" Payment
+              p
+                a.text-gray.small href="#" Pricing
+              p
+                a.text-gray.small href="#" Subscription
+              p
+                a.text-gray.small href="#" Customers
+            .flex-column
+              p.fw-bold COMPANY
+              p
+                a.text-gray.small href="#" About
+              p
+                a.text-gray.small href="#" Blog
+              p
+                a.text-gray.small href="#" Jobs
+              p
+                a.text-gray.small href="#" Press
+            .flex-column
+              p.fw-bold RESOURCES
+              p
+                a.text-gray.small href="#" Support
+              p
+                a.text-gray.small href="#" Contact
+              p
+                a.text-gray.small href="#" Privacy & Terms
+
+    == Slim::Template.new('_footer.slim').render

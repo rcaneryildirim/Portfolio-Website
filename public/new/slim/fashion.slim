@@ -1,0 +1,159 @@
+doctype html
+html lang="en"
+  head
+    == Slim::Template.new('_header.slim').render
+  body
+    == Slim::Template.new('_navigation.slim').render
+    / Section 1
+    .rainbow-hero.rainbow-hero-6
+      .hero-content.container.d-flex.flex-column.overflow-hidden
+        nav.navbar.navbar-inverse.navbar-expand-md.justify-content-between.z-index4
+          a.navbar-brand href="#"
+            img src="images/main/logo-white.png" srcset="images/main/logo-white@2x.png 2x, images/main/logo-white@3x.png 3x"
+          button.navbar-toggler data-target="#collapsingNavbar1" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #collapsingNavbar1.navbar-collapse.collapse.justify-content-end
+            div
+              ul.nav.navbar-nav
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Men
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Women
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Kids
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Shipping
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Blog
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Contact
+        p.scalable-header2.fw-bold.text-center FASHION
+        img.hero-model src="images/heroes-img/model.png"
+        .hero-info.my-auto.text-center.overflow-hidden
+          h1.mb-4 New Arrivals
+          div.mb-5
+            a.btn.btn-lg.btn-rainbow-primary.has-shadow.minw-xs-220.radius30 href="#" Browse Collection
+    / Section 2
+    .bg-white.pt-5.pt-lg-10
+      .container.position-relative
+        h3.fw-heavy.text-center LATEST ARRIVALS
+        p.scalable-header2.fw-bold.text-center ARRIVALS
+        .arrivals__products.container
+          .row
+            .col-lg-3.col-md-6.show-text
+              .arrivals__products-tshirt.text-center.position-relative.pt-3.js-click
+                img alt="tshirt" src="images/heroes-img/tshirt-blue.png" /
+                .on-hover
+                  p.description Part of this year's new summer collection, this shirt has fashion written all over it
+                  .button-container
+                    button.btn.arrivals__button type="button"  Buy now
+                p
+                  | Simple
+                  span.arrivals__products-blue  Blue
+                  |  Shirt
+                p.price
+                  sup.arrivals__products-curency $
+                  span.arrivals__products-price 40
+            .col-lg-3.col-md-6.show-text
+              .arrivals__products-tshirt.text-center.position-relative.pt-3
+                img alt="tshirt" src="images/heroes-img/tshirt-grey.png" /
+                .on-hover
+                  p.description Part of this year's new summer collection, this shirt has fashion written all over it
+                  .button-container
+                    button.btn.arrivals__button type="button"  Buy now
+                p
+                  | Simple
+                  span.arrivals__products-grey  Grey
+                  |  Shirt
+                p.price
+                  sup.arrivals__products-curency $
+                  span.arrivals__products-price 40
+            .col-lg-3.col-md-6.show-text.position-relative.pt-3
+              .arrivals__products-tshirt.text-center
+                img alt="tshirt" src="images/heroes-img/tshirt-pink.png" /
+                .on-hover
+                  p.description Part of this year's new summer collection, this shirt has fashion written all over it
+                  .button-container
+                    button.btn.arrivals__button type="button"  Buy now
+                p
+                  | Simple
+                  span.arrivals__products-pink  Pink
+                  |  Shirt
+                p.price
+                  sup.arrivals__products-curency $
+                  span.arrivals__products-price 40
+            .col-lg-3.col-md-6.show-text.position-relative.pt-3
+              .arrivals__products-tshirt.text-center
+                img alt="tshirt" src="images/heroes-img/tshirt-orange.png" /
+                .on-hover
+                  p.description Part of this year's new summer collection, this shirt has fashion written all over it
+                  .button-container
+                    button.btn.arrivals__button type="button"  Buy now
+                p
+                  | Simple
+                  span.arrivals__products-orange  Orange
+                  |  Shirt
+                p.price
+                  sup.arrivals__products-curency $
+                  span.arrivals__products-price 40
+    / Section 3
+    .bg-white.py-5
+      .container
+        .position-relative
+          h3.text-center.fw-heavy.py-5 PRODUCT OF THE WEEK
+          p.scalable-header2.fw-bold.text-left THIS WEEK
+        .row.align-items-center
+          .col-sm-12.col-md-6
+            h2.fw-light.width50 Awesome looking school bag
+            p.text-gray.py-3 This awesome school bag has been our best seller this week and is, thus, the featured product. Style and ellegance describe it the best. Check it out and find out how you can earn a deiscount for it!
+            a.btn.btn-lg.btn-rainbow-primary.has-shadow.minw-xs-220.radius30 href="#" Check it out
+          .col-sm-12.col-md-6
+            img.width100.py-3 src="images/heroes-img/backpack.png"
+    / Section 4
+    .bg-7.position-relative
+      .bottom-shade2
+      .container.position-relative.overflow-hidden
+        .d-flex.justify-content-center
+          p.scalable-header2.fw-bold.text-center SUMMER
+          img.hero-model.z-index0 src="images/heroes-img/model2.png"
+          .hero-info.my-auto.text-center.position-absolute.model2-text
+            h1.fw-bold.text-white.mb-4 Summer Collection
+            a.btn.btn-lg.btn-white.box-shadow.minw-xs-220.radius30.text-info href="#" Browse Swimsuits
+    / Section 5
+    .bg-white.py-5.py-lg-10
+      .container.width-brands
+        h3.text-center.fw-heavy OUR BRANDS
+        .d-flex.justify-content-between.py-5.sm-column.align-items-center
+          img.py-2 src="images/icons/zara.png" srcset="images/icons/zara@2x.png 2x"
+          img.py-2 src="images/icons/ralph.png" srcset="images/icons/ralph@2x.png 2x"
+          img.py-2 src="images/icons/hm.png" srcset="images/icons/hm@2x.png 2x"
+          img.py-2 src="images/icons/lacoste.png" srcset="images/icons/lacoste@2x.png 2x"
+          img.py-2 src="images/icons/massimo.png" srcset="images/icons/massimo@2x.png 2x"
+    / Section 6
+    .bg-2.py-10
+      .container.text-center
+        h4.text-white.fw-heavy.mt-sm-1.mt-lg-3.mb-5 NEWSLETTER
+        p.scalable-header.mx-auto.mw-100.fw-bold.mt-8.mt-md-4 SUBSCRIBE
+        .row.form
+          .col-9.mx-auto.mt-4
+            .form-group.stacked-btn-field
+              input.form-control.form-control-hero placeholder="Your email address" type="text"
+              a.btn.btn-rounded.btn-stacked.responsive-input-btn.moz-fix.btn-rainbow-warning href="#" Start free trial
+    / Footer
+    .bg-white.p-5
+      .container
+        .d-flex.justify-content-between.align-items-center
+          .d-flex.sm-column.align-items-center
+            img.pr-3 src="images/main/logo-color.png" srcset="images/main/logo-color@2x.png 2x, images/main/logo-color@3x.png 3x"
+            p.mb-0.text-gray &copy; Copyright 2017. All rights reserved
+          div
+            a.mx-2 href="#"
+              img title="facebook" height="20" src="images/icons/facebook.svg"
+            a.mx-2 href="#"
+              img title="googleplus" height="20" src="images/icons/googleplus.svg"
+            a.mx-2 href="#"
+              img title="twitter" height="20" src="images/icons/twitter.svg"
+            a.mx-2 href="#"
+              img title="instagram" height="20" src="images/icons/instagram.svg"
+
+    == Slim::Template.new('_footer.slim').render

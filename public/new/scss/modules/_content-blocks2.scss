@@ -1,0 +1,88 @@
+.bg-5 {
+  	background: url('../images/forms-img/form-3.png') no-repeat;
+  	background-size: cover;
+}
+
+.bg-6 {
+	background-image: linear-gradient( #4598fe 0%, #41c0ff 100%);
+}
+
+.bg-7 {
+	background-image: linear-gradient(90deg, #31DAFF 0%, #538DFF 100%);
+}
+
+.bg-8 {
+  background: url('../images/heroes-img/hero-10.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+
+  @media (max-width: 786px) {
+    height: 700px;
+  }
+}
+
+.image-top {
+	width: 102%;
+	margin-left: -2px;
+}
+
+.border-gray {
+	border-bottom: 1px solid #c2c2c2;
+	padding-bottom: 1rem;
+}
+
+.border-gray2 {
+  border-bottom: 1px solid #e4e7ec;
+  padding-bottom: 1rem;
+}
+
+.border-gray40 {
+  border-bottom: 1px solid #e4e7ec;
+  width: 40%;
+}
+
+.box-shadow {
+	box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.4);
+}
+
+blockquote {
+	border: none;
+	margin-bottom: -30px;
+	position: relative;
+	margin: 0 auto;
+	padding-left: 0.4em;
+	font-style: italic;
+
+	&:before {
+		content: "\201D";
+		font-weight: bold;
+		font-size: 9vw;
+		position: absolute;
+		top: -4rem;
+		left: -7.5rem;
+		font-family: 'Georgia';
+		color: #f4f5f7;
+	}
+}
+
+.down-arrow-0 {
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.h-700 {
+  height: 700px;
+  position: relative;
+}
+
+.width-260 {
+  max-width: 260px;
+}
+
+.card-shadow {
+  box-shadow: 0px 4px 12px 0px rgba(1, 1, 1, 0.1);
+}
+

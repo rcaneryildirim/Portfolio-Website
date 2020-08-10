@@ -1,0 +1,4 @@
+.bordered-top-when-active {
+  border-top: 4px solid transparent;
+  &.active { border-top: 4px solid #fff; }
+}

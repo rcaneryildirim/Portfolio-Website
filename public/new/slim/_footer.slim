@@ -1,0 +1,29 @@
+/! jQuery first, then Tether, then Bootstrap JS.
+script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+script src="js/libs/bootstrap.js"
+script src="js/rainbow-ui-kit.js"
+
+/ Add epicpxls external js script to power the buy button
+script src="https://buy.epicpxls.com/external/epicpxls.js"
+/ Add crisp to the footer so we can get comments from users.
+javascript:
+  $crisp = [];
+  CRISP_WEBSITE_ID = "b86fe31a-441e-444a-a439-52e20ef23052";
+  (function () {
+    d = document;
+    s = d.createElement("script");
+    s.src = "https://client.crisp.im/l.js";
+    s.async = 1;
+    d.getElementsByTagName("head")[0].appendChild(s);
+  })();
+
+/ Add the introbar to our page to welcome users.
+javascript:
+  var _intro_bar = window._intro_bar || {};
+  (function () {
+    var i, e;
+    i = document.createElement("script"), i.type = 'text/javascript';
+    i.async = 1, i.src = "//cdn.introbar.com/js/v1.js", e = document.getElementsByTagName("script")[0], e.parentNode.insertBefore(i, e);
+  })();
+  _intro_bar.account_id = '595517122fff3';

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="145px" viewBox="0 0 160 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>sketch-symbol</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Boostrap3-grid-system-layouts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Presentation" transform="translate(-295.000000, -2660.000000)" fill-rule="nonzero">
+            <g id="built-" transform="translate(0.000000, 2598.000000)">
+                <g id="sketch-symbol" transform="translate(295.000000, 62.000000)">
+                    <polygon id="Shape" fill="#FDB300" points="34.8387098 4.75742331 79.8387098 0 124.83871 4.75742331 159.677419 51.5253133 79.8387098 144.496653 0 51.5253133"></polygon>
+                    <g id="Group" transform="translate(0.000000, 51.525313)">
+                        <polygon id="Shape" fill="#EA6C00" points="32.3386802 0 79.8387817 92.9713706 0 0"></polygon>
+                        <polygon id="Shape" fill="#EA6C00" transform="translate(119.757957, 46.485685) scale(-1, 1) translate(-119.757957, -46.485685) " points="112.177246 0 159.677347 92.9713706 79.8385657 0"></polygon>
+                        <polygon id="Shape" fill="#FDAD00" points="32.3386802 0 127.338883 0 79.8387817 92.9713706"></polygon>
+                    </g>
+                    <g id="Group">
+                        <polygon id="Shape" fill="#FDD231" points="79.8387817 0 34.8385787 4.75736041 32.3386802 51.5252792"></polygon>
+                        <polygon id="Shape" fill="#FDD231" transform="translate(103.588587, 25.762640) scale(-1, 1) translate(-103.588587, -25.762640) " points="127.338638 0 82.3384349 4.75736041 79.8385364 51.5252792"></polygon>
+                        <polygon id="Shape" fill="#FDAD00" transform="translate(142.258058, 28.141320) scale(-1, 1) translate(-142.258058, -28.141320) " points="124.838566 51.5252792 159.67755 4.75736041 157.177246 51.5252792"></polygon>
+                        <polygon id="Shape" fill="#FDAD00" points="0 51.5252792 34.8385787 4.75736041 32.3386802 51.5252792"></polygon>
+                        <polygon id="Shape" fill="#FEEEB7" points="79.8387817 0 32.3386802 51.5252792 127.338883 51.5252792"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

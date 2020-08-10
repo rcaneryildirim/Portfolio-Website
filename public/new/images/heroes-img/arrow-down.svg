@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Boostrap3-grid-system-layouts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Heros" transform="translate(-780.000000, -7960.000000)" fill="#FFFFFF">
+            <g id="hero-9" transform="translate(100.000000, 7240.000000)">
+                <g id="background">
+                    <g id="continue-down" transform="translate(680.000000, 720.000000)">
+                        <path d="M20,22.599 L14.397,16.996 L12.996,18.398 L19.603,25.004 L20.397,25.004 L27.004,18.398 L25.603,16.996 L20,22.599 Z M20,38 C10.059,38 2,29.942 2,20 C2,10.059 10.059,2 20,2 C29.941,2 38,10.059 38,20 C38,29.942 29.941,38 20,38 L20,38 Z M20,0 C8.954,0 0,8.954 0,20 C0,31.046 8.954,40 20,40 C31.046,40 40,31.046 40,20 C40,8.954 31.046,0 20,0 L20,0 Z" id="icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

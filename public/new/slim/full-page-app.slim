@@ -1,0 +1,123 @@
+doctype html
+html lang="en"
+  head
+    == Slim::Template.new('_header.slim').render
+  body
+    == Slim::Template.new('_navigation.slim').render
+    / Section 1
+    .bg-white.overflow-hidden
+      .container
+        nav.navbar.navbar-light.navbar-expand-md.justify-content-between
+          a.navbar-brand href="#"
+            img src="images/main/logo-color.png" srcset="images/main/logo-color@2x.png 2x, images/main/logo-color@3x.png 3x"
+          button.navbar-toggler data-target="#collapsingNavbar1" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #collapsingNavbar1.navbar-collapse.collapse.justify-content-end
+            div
+              ul.nav.navbar-nav
+                li.nav-item.active
+                  a.nav-item.nav-link.active.text-primary.fw-bold.px-3 href="#" Product
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Download
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Suport
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Contact
+        .text-center.mt-5
+          h1.fw-light.mt-3 Perfect for busy people
+          p.text-gray.mt-3 With TaskTrack you will never lose track of your buys schedule. We promise :)
+          .d-block
+            a.btn.btn-lg.btn-white.has-shadow.minw-xs-180.m-3 href="#"
+              img.mr-2.mb-1 src="images/icons/google_play.svg"
+              span Google Play
+            a.btn.btn-lg.btn-white.has-shadow.minw-xs-180.m-3 href="#"
+              img.mr-2.mb-1 src="images/icons/apple.svg"
+              span App Store
+
+        div.d-flex.align-items-center.justify-content-center.position-relative.top90
+          div.m-2
+            img.width200.m-2 src="images/heroes-img/hero-spots.svg"
+          div.align-items-center
+            .iphone-white.iphone-sm
+              .iphone-speaker
+              .iphone-front-camera
+              .iphone-screen
+                img src="images/heroes-img/app-screen-1.jpg"
+              .iphone-home-button
+          div.position-absolute.z-index4.top40
+            .iphone-white.is-in-front
+              .iphone-speaker
+              .iphone-front-camera
+              .iphone-screen
+                img src="images/heroes-img/app-screen-2.jpg"
+              .iphone-home-button
+          div.align-items-center
+            .iphone-white.iphone-sm
+              .iphone-speaker
+              .iphone-front-camera
+              .iphone-screen
+                img src="images/heroes-img/app-screen-3.jpg"
+              .iphone-home-button
+          div.m-2
+            img.width200 src="images/heroes-img/hero-spots2.svg"
+    / Section 2
+    .bg-3.py-10
+      .container
+        .row.align-items-center
+          .col-sm-12.col-md-5
+            h2.text-white.fw-light Design & Share
+            p.text-white.mb-5.mt-3 Sharing your designs with others has never been this easy. Your team members and clients can comment on your uploaded screens and give you real-time feedback and suggestions. Of course, you will be notified each time they do.
+          .col-sm-12.col-md-7
+            img.mw-100 src="images/heroes-img/content-window.png"
+    / Section-3
+    .bg-white.py-10
+      .container.text-center
+        h2.fw-light.text-info Our Clients
+        p.text-gray.pb-5 We’ve had the pleasure of working with over 500 amazing clients. Check some of them out
+        .d-flex.justify-content-between.sm-column.align-items-center
+          img.py-2 src="images/icons/microsoft.png" srcset="images/icons/microsoft@2x.png 2x"
+          img.py-2 src="images/icons/airbnb.png" srcset="images/icons/airbnb@2x.png 2x"
+          img.py-2 src="images/icons/slack.png" srcset="images/icons/slack@2x.png 2x"
+          img.py-2 src="images/icons/google.png" srcset="images/icons/google@2x.png 2x"
+          img.py-2 src="images/icons/marvel.png" srcset="images/icons/marvel@2x.png 2x"
+        p.text-gray.px-1.px-lg-5.mt-5 Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important for the information on the computer to be stored and kept properly.
+    / Section 4
+    .bg-white.pt-5
+      .container
+        .row.align-items-center
+          .col-sm-12.col-md-6
+            img.mw-100.has-shadow.mt-3 src="images/heroes-img/model-half.png"
+          .col-sm-12.col-md-6
+            blockquote.fw-regular Have you ever heard the expression, “Do not count your chickens before they hatch?” Maybe an older, wiser individual would tell you this to keep you from getting ahead of yourself. Like buying a new car before you actually got that new job.
+            p.text-primary.fw-bold LILLY LYONS
+            img.mw-100.mb-5 src="images/icons/slack.png" srcset="images/icons/slack@2x.png 2x"
+    / Section 5
+    .bg-1.py-5.py-lg-10
+      .container.text-center
+        h2.text-white.fw-light.mt-3 Download the app
+        p.text-white.mt-3 Grab SmartChat from Google Play or App Store and start chatting with your friends.
+        .d-block.p-4
+          a.btn.btn-lg.btn-white.box-shadow.minw-xs-180.m-3 href="#"
+            img.mr-2.mb-1 src="images/icons/apple.svg"
+            span Google Play
+          a.btn.btn-lg.btn-white.box-shadow.minw-xs-180.m-3 href="#"
+            img.mr-2.mb-1 src="images/icons/google_play.svg"
+            span App Store
+    / Section 6 - Footer
+    .bg-white.py-5
+      .container
+        .d-flex.justify-content-between.align-items-center
+          .d-flex.sm-column.align-items-center
+            img.pr-3 src="images/main/logo-color.png" srcset="images/main/logo-color@2x.png 2x, images/main/logo-color@3x.png 3x"
+            p.mb-0.text-gray.small &copy; Copyright 2017. All rights reserved
+          div
+            a.mx-2 href="#"
+              img title="facebook" height="20" src="images/icons/facebook.svg"
+            a.mx-2 href="#"
+              img title="googleplus" height="20" src="images/icons/googleplus.svg"
+            a.mx-2 href="#"
+              img title="twitter" height="20" src="images/icons/twitter.svg"
+            a.mx-2 href="#"
+              img title="instagram" height="20" src="images/icons/instagram.svg"
+
+    == Slim::Template.new('_footer.slim').render

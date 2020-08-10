@@ -1,0 +1,17 @@
+{
+  "name": "rainbow-uikit",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}

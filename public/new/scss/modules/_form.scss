@@ -1,0 +1,136 @@
+.form-control-rounded {
+  border-radius: 30px;
+}
+.form-control-hero {
+  padding: 20px 40px;
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 40px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.20);
+  &::placeholder {
+    color: #A5ADBB;
+  }
+}
+.stacked-btn-field {
+  position: relative;
+  .btn {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+  }
+}
+.rainbow-form {
+  .form-top { z-index: 10; }
+}
+
+.rainbow-form-1 {
+  background: #fff;
+  .blue-shade {
+    background: url('../images/forms-img/form-1.png') #fff no-repeat center center;
+    position: absolute;
+    height: 420px;
+    width: 100%;
+  }
+  .form-top {
+    margin-top: 109px;
+    h2 { color: #fff; }
+    p { color: #fff; }
+  }
+  .card {
+    margin-top: 88px;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,0.10);
+    border: none;
+    border-radius: 0;
+    .card-block {
+      padding: 4.44rem 5rem 5rem;
+    }
+    h5 {
+      margin-bottom: 44px;
+    }
+  }
+}
+.right0 {
+  right: 0;
+}
+
+.bg-9 {
+  background: url('../images/forms-img/sneakers.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+.border-none {
+  border: none;
+}
+
+.or-text {
+  top: 475px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 50px;
+  margin: 0 auto;
+  @media (max-width: 575px) {
+    top: 500px;
+  }
+}
+.btn-width1 {
+  width: 160px;
+}
+
+.btn-width2 {
+  width: 240px;
+}
+
+.radius-0 {
+  border-radius: 0;
+}
+
+.border-gradient {
+  height: 6px;
+  background-image: linear-gradient(90deg, #31DAFF 0%, #538DFF 100%);
+}
+
+.border-gradient2 {
+  height: 6px;
+  background-image: linear-gradient(90deg, #336DFF 0%, #7963FF 100%);
+}
+
+.border-gradient3 {
+  height: 6px;
+  background-image: linear-gradient(90deg, #FFA466 0%, #FF5360 100%);
+}
+
+.btn-f {
+  background: url('../images/icons/half-facebook.svg') no-repeat, linear-gradient(90deg, #3e70d8 0%, #16419b 100%);
+  cursor: pointer;
+}
+
+.btn-g {
+  background: url('../images/icons/half-gplus.svg') no-repeat, linear-gradient(90deg, #ff6b43 0%, #ff5e4b 100%);
+  cursor: pointer;
+}
+
+.border-bottom-blue {
+  border-bottom: 2px solid #47aaff;
+}
+.border-blue {
+  border: 2px solid #47aaff;
+}
+
+.border-bottom-red {
+  border-bottom: 2px solid #ff6565;
+}
+.border-red {
+  border: 2px solid #ff6565;
+}
+.border-top-red {
+  border-top: 2px solid #ff6565;
+}
+
+.border-bottom-green {
+  border-bottom: 2px solid #18d989;
+}
+.border-green {
+  border: 2px solid #18d989;
+}

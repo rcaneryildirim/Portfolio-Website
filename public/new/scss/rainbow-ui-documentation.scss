@@ -1,0 +1,9 @@
+@import "generic/_variables";
+@import "libs/bootstrap/_variables";
+@import "libs/bootstrap/_mixins";
+
+// styles for style guide & bootstrap
+// NOTE: THESE ARE NOT REQUIRED WE ONLY USE THEM FOR SHOWCASING THE UIKIT
+body {
+  margin-top: 60px;
+}

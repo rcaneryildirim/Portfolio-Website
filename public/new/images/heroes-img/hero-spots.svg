@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="268px" height="192px" viewBox="0 0 268 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>spots left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Boostrap3-grid-system-layouts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Heros" transform="translate(-214.000000, -8598.000000)">
+            <g id="hero-10" transform="translate(100.000000, 8120.000000)">
+                <g id="spots-left" transform="translate(114.000000, 478.000000)">
+                    <circle id="Oval-5" fill="#7A6EFF" cx="146" cy="44" r="8"></circle>
+                    <circle id="Oval-5-Copy-3" fill="#FFDD27" cx="8" cy="8" r="8"></circle>
+                    <circle id="Oval-5-Copy" fill="#FFDE26" cx="202" cy="36" r="16"></circle>
+                    <circle id="Oval-5-Copy-2" fill="#32BEFF" cx="90" cy="92" r="16"></circle>
+                    <circle id="Oval-6" fill="#1DEA7F" cx="260" cy="92" r="8"></circle>
+                    <circle id="Oval-6-Copy-2" fill="#FF557F" cx="202" cy="144" r="8"></circle>
+                    <circle id="Oval-6-Copy" fill="#1DEA7F" cx="54" cy="184" r="8"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

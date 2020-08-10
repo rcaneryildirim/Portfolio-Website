@@ -1,0 +1,202 @@
+doctype html
+html lang="en"
+  head
+    == Slim::Template.new('_header.slim').render
+  body
+    == Slim::Template.new('_navigation.slim').render
+
+    / Block 1
+    .bg-white.py-10
+      .container
+        .row
+          .col-sm-12.col-md-4
+            img.mt-2 width="54" src="images/icons/portfolio.svg"
+            h3.text-info.fw-regular.mt-3 Strong portfolios
+            p.mt-2.fw-regular.text-gray People like a “special” price or exclusive offer directed only to them. Most Industrial and Manufacturing equipment buyers are seeking to be told that they are special.
+          .col-sm-12.col-md-4
+            img.mt-2 width="54" src="images/icons/chat.svg"
+            h3.text-info.fw-regular.mt-3 1 to 1 and group chat
+            p.mt-2.fw-regular.text-gray Research in advertising is done in order to produce better advertisements that are more efficient in motivating customers to buy a product or a service.
+          .col-sm-12.col-md-4
+            img.mt-2 width="54" src="images/icons/email.svg"
+            h3.text-info.fw-regular.mt-3 Email notifications
+            p.mt-2.fw-regular.text-gray You have just invested in a new vehicle, the one of your dreams, and you take it on a trip across Canada. You only put gas in it and drive sightseeing and following your nose.
+        .row
+          .col-sm-12.col-md-4
+            img.mt-2 width="54" src="images/icons/tutorials.svg"
+            h3.text-info.fw-regular.mt-3 High quality tutorials
+            p.mt-2.fw-regular.text-gray Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola, body muscles and holding ones own breath.
+          .col-sm-12.col-md-4
+            img.mt-2 width="54" src="images/icons/photos.svg"
+            h3.text-info.fw-regular.mt-3 Stunning stock photos
+            p.mt-2.fw-regular.text-gray Planning to visit Las Vegas or any other vacational resort where casinos are a major portion of their business? I have just the thing for you.
+          .col-sm-12.col-md-4
+            img.mt-2 width="54" src="images/icons/watch.svg"
+            h3.text-info.fw-regular.mt-3 Apple watch ready
+            p.mt-2.fw-regular.text-gray WordPress, the premier free open-source blogging utility, has gone through several upgrades in its life. Today it’s one of the most popular blogging tools on the Internet.
+
+    / Block 2
+    .rainbow-hero-4.py-10.my-5
+      .top-left-shade
+      .top-right-shade
+      .bottom-shade
+      .container
+        .row.align-items-center
+          .col-sm-12.col-md-6
+            h1.text-white.fw-light.pr-1.pr-lg-5 A new perspective in design and development
+          .col-sm-12.col-md-6
+            p.text-white.fw-regular.mt-3 Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important for the information on the computer to be stored and kept properly. It is also extremely important for people on computers to protect their computer from data loss, misuse, and abuse. For example, it is crucial for businesses to keep information they have secure so that hackers can’t access the information.
+
+    / Block 3
+    .bg-white.py-10.my-5.z-index4.position-relative
+      .container
+        .row.justify-content-center
+          h4.fw-heavy.pl-2
+            span.text-primary.fw-heavy EXPERIENCE
+            |  VIRTUAL REALITY
+        p.text-center.fw-regulat.text-gray.mt-3.px-1.px-lg-10 With so many different ways today to find information online, it can sometimes be hard to know where to go to first. I want to look at the major and most effective ways to find information online. The biggest and most commonly used method is to use a search engine such as: Google, Yahoo, or Msn.
+
+        p.scalable-header.text-center.mx-auto.mw-100.fw-bold.mt-3.mt-lg-20 EXPERIENCE
+        img.mw-100 src="images/heroes-img/mask3.png"
+
+    / Block 4
+    .bg-white.pt-10.my-5
+      .container
+        .row.align-items-center
+          .col-sm-12.col-md-5
+            img.mx-5 src="images/icons/statistic.svg"
+          .col-sm-12.col-md-7
+            h2.fw-light Detailed statistics
+            p.mt-3.fw-regular.text-gray Do you want to download free song for ipod? If so, reading this article could save you from getting in to a lot of trouble! Downloading music to your Ipod has more than one pitfall associated with it, and this article will tell you the best way to download free song for iPod.
+      img.mw-100.mt-5.image-top src="images/icons/top.svg"
+
+    / Block 5
+    .bg-6.py-10.my-5.z-index4.position-relative
+      .container
+        h4.text-white.text-center.fw-heavy.mt-3 WHAT OTHERS SAY
+        p.scalable-header.text-center.mx-auto.mw-100.fw-bold.mt-5 FEEDBACK
+
+        .row.d-flex.mt-5.mt-lg-10
+          .card-block.m-2.bg-white.flex-1.rounded.width250.align-self-center
+            .row.p-3
+              img width="66" height="66" src="images/avatars/avatar-4.png"
+              .pl-3
+                h4.fw-medium Carlos Freeman
+                p.text-gray.small @carlosfreeman
+            a.text-info href="#"
+              | @Rainbow_ui
+            p.float-left
+            | Fantastic services and professional staff! It was a pleasure working with you.
+
+          .card-block.m-2.bg-white.flex-1.rounded.width250.align-self-center
+            .row.p-3
+              img width="66" height="66" src="images/avatars/avatar-5.png"
+              .pl-3
+                h4.fw-medium Minerva Holland
+                p.text-gray.small @mnrv
+            a.text-info href="#"
+              | @Rainbow_ui
+            p.float-left
+            | Looking forward to our next collaboration! Thank you for this wonderful collaboration.
+
+          .card-block.m-2.bg-white.flex-1.rounded.width250.align-self-center
+            .row.p-3
+              img width="66" height="66" src="images/avatars/avatar-6.png"
+              .pl-3
+                h4.fw-medium Dora Massey
+                p.text-gray.small @addicted_designer
+            a.text-info href="#"
+              | @Rainbow_ui
+            p.float-left
+            | Working with you guys was a great experience! You are on the top of my “to work with” list.
+
+    / Block 6
+    .bg-white.pt-5.my-5
+      .container
+        .row.align-items-center
+          .col-sm-12.col-md-6
+            img.mw-100.has-shadow.mt-3 src="images/heroes-img/model-half.png"
+          .col-sm-12.col-md-6
+            blockquote.fw-regular Have you ever heard the expression, “Do not count your chickens before they hatch?” Maybe an older, wiser individual would tell you this to keep you from getting ahead of yourself. Like buying a new car before you actually got that new job.
+            p.text-primary.fw-bold LILLY LYONS
+            img.mw-100.mb-5 src="images/icons/slack.png" srcset="/images/icons/slack@2x.png 2x"
+
+    / Block 7
+    .bg-white.py-10.my-5
+      .container.text-center
+        p.text-gray.fw-medium SOUNDS GOOD, DOESN'T IT?
+        h4.mt-3 Subscribe now and get unlimited access to high quality video tutorials
+        a.mt-3.btn.btn-lg.btn-rainbow-warning.minw-xs-220.fw-medium href="#" Let's go!
+
+    / Block 8
+    .bg-1.py-10.my-5
+      .container
+        .row.d-flex.align-items-center
+          .col-sm-12.col-lg-4
+            h2.fw-light.text-white.pr-5 Choose the best plan for you
+            p.mt-3.text-white.pr-1.pr-lg-5 Sony laptops are among the most well known laptops on today’s market. Sony is a name that over time has established itself as creating a solid product with a stellar reputation
+
+          .card-block.col-lg-4.bg-white.m-4.flex-1.rounded.width250.text-center
+            img width="80" src="images/icons/personal.svg"
+            p.fw-bold PERSONAL
+            p.text-gray.small.border-gray Best option for freelancers
+            p.fw-medium 1GB Storage
+            p.fw-medium 2 integrations
+            p.fw-medium.border-gray 10 prototypes
+            h4.text-info.fw-regular
+              sup.text-gray $
+              | 199
+              sub.text-gray month
+            a.mt-3.btn.btn-lg.btn-rainbow-info.minw-xs-220.fw-medium href="#" Choose plan
+
+          .card-block.col-lg-4.bg-white.m-4.flex-1.rounded.width250.text-center
+            img width="80" src="images/icons/enterprise.svg"
+            p.fw-bold ENTERPRISE
+            p.text-gray.small.border-gray Best option for companies
+            p.fw-medium 10GB Storage
+            p.fw-medium unlimited integrations
+            p.fw-medium.border-gray unlimited prototypes
+            h4.text-info.fw-regular
+              sup.text-gray $
+              | 299
+              sub.text-gray month
+            a.mt-3.btn.btn-lg.btn-rainbow-info.minw-xs-220.fw-medium href="#" Choose plan
+
+    / Block 9
+    .bg-light.py-10.my-5
+      .container
+        h2.fw-light.text-center Our Work
+        p.text-gray.text-center.pb-5 We have a rich portfolio in both web and mobile projects. Check some of our projects below.
+        .row.d-flex.justify-content-around
+          .card-block.col-lg-3.bg-white.flex-1.rounded.width240.text-center.card-shadow.m-3.p-0
+            img.mw-100 src="images/heroes-img/nova.png"
+            h4.fw-medium.mt-3 Nova
+            p.text-gray.small Web application
+          .card-block.col-lg-3.bg-white.flex-1.rounded.width240.text-center.card-shadow.m-3.p-0
+            img.mw-100 src="images/heroes-img/bright-fox.png"
+            h4.fw-medium.mt-3 Bright Fox
+            p.text-gray.small Branding
+          .card-block.col-lg-3.bg-white.flex-1.rounded.width240.text-center.card-shadow.m-3.p-0
+            img.mw-100 src="images/heroes-img/MJ.png"
+            h4.fw-medium.mt-3 M J
+            p.text-gray.small Website
+          .card-block.col-lg-3.bg-white.flex-1.rounded.width240.text-center.card-shadow.m-3.p-0
+            img.mw-100 src="images/heroes-img/cluster.png"
+            h4.fw-medium.mt-3 Cluster
+            p.text-gray.small Mobile Application
+
+    / Block 10
+    .bg-white.py-10.my-5
+      .container.text-center
+        h2.fw-light.text-info Our Clients
+        p.text-gray.pb-5 We’ve had the pleasure of working with over 500 amazing clients. Check some of them out
+        .d-flex.justify-content-between.sm-column.align-items-center
+          img.py-2 src="images/icons/microsoft.png" srcset="images/icons/microsoft@2x.png 2x"
+          img.py-2 src="images/icons/airbnb.png" srcset="images/icons/airbnb@2x.png 2x"
+          img.py-2 src="images/icons/slack.png" srcset="images/icons/slack@2x.png 2x"
+          img.py-2 src="images/icons/google.png" srcset="images/icons/google@2x.png 2x"
+          img.py-2 src="images/icons/marvel.png" srcset="images/icons/marvel@2x.png 2x"
+        p.text-gray.px-1.px-lg-5.mt-5 Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important for the information on the computer to be stored and kept properly.
+
+    / Add footer template below
+    == Slim::Template.new('_footer.slim').render

@@ -1,0 +1,140 @@
+doctype html
+html lang="en"
+  head
+    == Slim::Template.new('_header.slim').render
+  body
+    == Slim::Template.new('_navigation.slim').render
+    / Section 1
+    .rainbow-hero-2
+      .top-left-shade
+      .top-right-shade
+      .bottom-shade
+      .container.position-relative
+        nav.navbar.navbar-inverse.navbar-expand-md.justify-content-between
+          a.navbar-brand href="#"
+            img src="images/main/logo-white.png" srcset="images/main/logo-white@2x.png 2x, images/main/logo-white@3x.png 3x"
+          button.navbar-toggler data-target="#collapsingNavbar1" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+          #collapsingNavbar1.navbar-collapse.collapse.justify-content-end
+            div
+              ul.nav.navbar-nav
+                li.nav-item.active
+                  a.nav-item.nav-link.active.fw-bold.border-top-white.position-relative.px-3 href="#" App preview
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Platforms
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" FAQ
+                li.nav-item
+                  a.nav-item.nav-link.px-3 href="#" Download
+        .row.align-items-center
+          .col-sm-12.col-md-6
+            h1.text-white.fw-light.mt-3 Say hello with a smile
+            p.text-white Smartchat is a smart messaging app that helps you say more and do more, in a fun way. Personalize each message with stickers, emojis and beautiful text styles.
+            .d-block
+              a.btn.btn-lg.btn-rainbow-primary.minw-xs-180.m-2 href="#"
+                img.mr-2.mb-1 width="20" src="images/icons/play-btn.svg"
+                span.text-white Watch video
+              a.btn.btn-lg.btn-white.minw-xs-180.m-2 href="#"
+                span Explore
+          .col-sm-12.col-md-6.py-5
+            .iphone-white.mx-auto
+              .iphone-speaker
+              .iphone-front-camera
+              .iphone-screen
+                img src="images/heroes-img/messages-app-screen.jpg"
+              .iphone-home-button
+    / Section 2
+    .bg-white.text-center.pt-5.pt-lg-10
+      .container
+        .row
+          .col-sm-12.col-md-4
+            .circle-icon-container.mx-auto.btn-rainbow-info
+              img src="images/icons/flat-msg.svg" width="48" height="48"
+            h3.fw-regular.mt-3 Messages
+            p.text-gray.mt-3.px-3 Chat via personalized messages, making your conversations unique.
+          .col-sm-12.col-md-4
+            .circle-icon-container.mx-auto.btn-rainbow-primary
+              img src="images/icons/flat-contacts.svg" width="42" height="42"
+            h3.fw-regular.mt-3 Contacts
+            p.text-gray.mt-3.px-3 Sync contacts from your phone and keep in touch with your friends.
+          .col-sm-12.col-md-4
+            .circle-icon-container.mx-auto.btn-rainbow-warning
+              img src="images/icons/flat-groups.svg" width="48" height="48"
+            h3.fw-regular.mt-3 Groups
+            p.text-gray.mt-3.px-3 Create groups with your best friends or team mates.
+      .border-gray40.mx-auto.pt-5.pt-lg-10
+    / Section 3
+    .bg-white.py-5
+      .container
+        .row.align-items-end
+          .col-sm-12.col-md-6
+            .iphone-white.mx-auto.iphone-top
+              .iphone-speaker
+              .iphone-front-camera
+              .iphone-screen
+                img src="images/heroes-img/messages-app-screen.jpg"
+              .iphone-home-button
+          .col-sm-12.col-md-6.mt-5
+            .btn-rainbow-info.circle-icon-container
+              img src="images/icons/flat-msg.svg" width="48" height="48"
+            h2.fw-light.mt-3.text-info Messages
+            p.text-gray.mt-3 Make each conversation unique. Express yourself better by personalizing your messages with stickers, emojis and lovely text styles. Say more, do more!
+    / Section 4
+    .bg-faded.py-5
+      .container
+        .row.align-items-end
+          .col-sm-12.col-md-6
+            .circle-icon-container.btn-rainbow-primary
+              img src="images/icons/flat-contacts.svg" width="42" height="42"
+            h3.fw-light.mt-3.text-primary Contacts
+            p.text-gray.mt-3.mb-5 Do you have hundreds of friends and want to be able to talk to them all? No problem! With SmartChat you can add anyone in your contact list who uses the app.
+          .col-sm-12.col-md-6
+            .iphone-white.mx-auto.iphone-top
+              .iphone-speaker
+              .iphone-front-camera
+              .iphone-screen
+                img src="images/heroes-img/contacts-app-screen.jpg"
+              .iphone-home-button
+    / Section 5
+    .bg-white.py-5.py-lg-10
+      .container
+        .row.align-items-center
+          .col-sm-12.col-md-6
+            .iphone-white.mx-auto
+              .iphone-speaker
+              .iphone-front-camera
+              .iphone-screen
+                img src="images/heroes-img/group-app-screen.png"
+              .iphone-home-button
+          .col-sm-12.col-md-6.mt-5
+            .btn-rainbow-warning.circle-icon-container
+              img src="images/icons/flat-groups.svg" width="48" height="48"
+            h2.fw-light.mt-3.text-warning Groups
+            p.text-gray.mt-3 Make each conversation unique. Express yourself better by personalizing your messages with stickers, emojis and lovely text styles. Say more, do more!
+    / Section 6
+    .bg-1.py-5.pt-lg-10
+      .container.text-center
+        h2.text-white.fw-light.mt-3 Download the app
+        p.text-white.mt-3 Grab SmartChat from Google Play or App Store and start chatting with your friends.
+        .d-block.p-4
+          a.btn.btn-lg.btn-white.box-shadow.minw-xs-180.m-3 href="#"
+            img.mr-2.mb-1 src="images/icons/apple.svg"
+            span Google Play
+          a.btn.btn-lg.btn-white.box-shadow.minw-xs-180.m-3 href="#"
+            img.mr-2.mb-1 src="images/icons/google_play.svg"
+            span App Store
+    .bg-1.py-3
+      .container
+        .d-flex.justify-content-between.align-items-center
+          .d-flex.sm-column.align-items-center
+            img.pr-3 src="images/main/logo-white.png" srcset="images/main/logo-white@2x.png 2x, images/main/logo-white@3x.png 3x"
+            p.mb-0.text-white.small &copy; Copyright 2017. All rights reserved
+          ul.style-row
+            li.nav-item
+              a.nav-item.nav-link.px-3.text-white.small href="#" LEGAL
+            li.nav-item
+              a.nav-item.nav-link.px-3.text-white.small href="#" TERMS
+            li.nav-item
+              a.nav-item.nav-link.px-3.text-white.small href="#" PRIVACY
+
+    == Slim::Template.new('_footer.slim').render

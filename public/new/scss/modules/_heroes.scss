@@ -1,0 +1,336 @@
+// ======== Heroes page styles ======== //
+// ====== Created by EpicCodres ====== //
+// ==== popular classes ==== //
+
+// === popular classes end === //
+
+// === Hero-1 styles === //
+.rainbow-hero-1 {
+  background: url('../images/heroes-img/hero-1.jpg') #fff no-repeat center center;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  .hero-content {
+    height: 800px;
+  }
+  .hero-info {
+    h1 { color: #383C41; }
+    p { color: #6B717B; }
+  }
+}
+
+// === Hero-2 styles === //
+.rainbow-hero-2 {
+  @include gradient-x(#31DAFF, #538DFF, 0%, 100%);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  position: relative;
+  overflow: hidden;
+  .top-left-shade {
+    position: absolute;
+    @include gradient-x(#31D9FF, #3E8DFF, 0%, 100%);
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 180px;
+  }
+  .top-right-shade {
+    position: absolute;
+    @include gradient-x(#317AFF, #538DFF, 0%, 100%);
+    transform: skew(-12deg);
+    top: 0;
+    right: -5%;
+    width: 60%;
+    height: 180px;
+  }
+  .bottom-shade {
+    position: absolute;
+    @include gradient-x(#39FAFF, #49A5FF, 0%, 100%);
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 180px;
+  }
+
+  .hero-content {
+    position: relative;
+    color: #fff;
+    h1 {
+      letter-spacing: 2px;
+    }
+  }
+}
+
+// === Hero-3 styles === //
+.rainbow-hero-3 {
+  background: url('../images/heroes-img/headhones.jpg') no-repeat 20% bottom #fff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  .hero-content {
+    min-height: 800px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    color: #A5ADBB;
+    font-weight: 300;
+    &.active {
+      color: #47AAFF;
+      font-weight: 500;
+    }
+  }
+
+  .hero-info {
+    h1 {
+      color: #47AAFF;
+    }
+    p {
+      color: #6B717B;
+     }
+  }
+}
+
+// === Hero-4 styles == //
+.rainbow-hero-4 {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  position: relative;
+  @include gradient-directional(#4641FF, #795DFF, 270deg);
+  overflow: hidden;
+  .hero-content {
+    min-height: 800px;
+    color: #fff;
+  }
+  .top-left-shade {
+    @include gradient-directional(#7435FF, #644EFF, 90deg);
+    height: 265px;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .top-right-shade {
+    @include gradient-directional(#4641FF, #592EFF, -90deg);
+    transform: skew(12deg);
+    height: 265px;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .bottom-shade {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(-90deg, #4641FF 0%, #4F3EF6 50%, #795DFF 100%);
+  }
+}
+
+// === Hero-5 styles === //
+.rainbow-hero-5 {
+  background: url('../images/heroes-img/hero-5.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 900px;
+
+  .hero-content {
+    min-height: 800px;
+    color: #FFFFFF;
+  }
+  .hero-info {
+    p {
+      font-size: 18px;
+      color: #FFFFFF;
+      font-weight: 500;
+    }
+    h1 {
+      font-size: 64px;
+      color: #FFFFFF;
+      font-weight: 500;
+      letter-spacing: 2px;
+     }
+  }
+}
+
+// === Hero-6 styles === //
+.rainbow-hero-6 {
+  @include gradient-x(#4697FF, #41C0FF, 0%, 100%);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  .hero-content {
+    position: relative;
+    min-height: 800px;
+    background: url(../images/heroes-img/confetti.svg) no-repeat center 80%;
+  }
+  .hero-subject {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 10%;
+    font-size: 144px;
+    letter-spacing: 45px;
+    font-weight: 700;
+    color: #3892F8;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .hero-model {
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .hero-info {
+    position: relative;
+    h1 {
+      display: inline-block;
+      font-size: 72px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      color: #FFFFFF;
+      text-shadow: 0 12px 24px rgba(0,0,0,0.20);
+      position: relative;
+      z-index: 2;
+      &:before {
+        content: "";
+        position: absolute;
+        height: 12px;
+        width: 130%;
+        background-color: #33FFBE;
+        top: 50%;
+        left: -15%;
+        z-index: -1;
+      }
+     }
+  }
+}
+
+// === Hero-7 styles === //
+.rainbow-hero-7 {
+  background-color: #fff;
+  .hero-content {
+    min-height: 800px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      background: url(../images/heroes-img/legs.png) no-repeat center bottom;
+      z-index: 1;
+    }
+  }
+  .hero-subject {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    color: #F4F5F7;
+    font-size: 144px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 40px;
+    z-index: 0;
+  }
+  .navbar-gradient {
+    @include gradient-x(#31DAFF, #538DFF, 0%, 100%);
+    position: relative;
+    z-index: 555;
+  }
+  .nav-link {
+    font-size: 14px;
+    color: #fff;
+  }
+  .hero-info {
+    position: relative;
+    z-index: 555;
+    h1.first {
+      font-size: 6rem;
+      color: #FFD15D;
+      line-height: 112px;
+      font-weight: 800;
+      text-transform: uppercase;
+      @media (max-width: 786px) {
+        font-size: 3rem;
+        line-height: 0px;
+      }
+    }
+    h1.second {
+      font-size: 6rem;
+      color: #6163FF;
+      line-height: 112px;
+      font-weight: 800;
+      text-transform: uppercase;
+      @media (max-width: 786px) {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+// === Hero-8 styles === //
+.rainbow-hero-8 {
+  @include gradient-x(#4641FF, #876EFF, 0%, 100%);
+  .hero-content {
+    min-height: 800px;
+    background: url(../images/heroes-img/r.svg) no-repeat center center;
+  }
+  h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    @media (max-width: 786px) {
+      font-size: 3rem;
+    }
+  }
+  p {
+    font-weight: 200;
+  }
+}
+
+// === Hero-9 styles === //
+.rainbow-hero-9 {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  .hero-content {
+    min-height: 900px;
+    background: url('../images/heroes-img/hero-9.jpg') no-repeat;
+    background-size: cover;
+    color: #383C41;
+    background-position: center center;
+
+  }
+  h1 {
+    font-size: 72px;
+    font-weight: 700;
+  }
+  h6 {
+    color: #47AAFF;
+    font-weight: 600;
+  }
+}
+
+// === Hero-10 styles === //
+.rainbow-hero-10 {
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+  position: relative;
+  .hero-content {
+    min-height: 800px;
+    overflow: hidden;
+    color: #383C41;
+    position: relative;
+    z-index: 667;
+    &:before, &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      background: url(../images/heroes-img/hero-spots.svg) no-repeat 0 85%;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    &:after {
+      transform: scaleX(-1);
+    }
+  }
+}

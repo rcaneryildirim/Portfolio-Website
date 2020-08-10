@@ -1,0 +1,26 @@
+$min-sizes: (
+    0:0px,
+    80: 80px,
+    100: 100px,
+    150: 150px,
+    180: 180px,
+    220: 220px,
+    280: 280px,
+    320: 320px
+) !default;
+
+
+@each $prop, $abbrev in (min-width: minw, min-height: minh) {
+  @each $bpname,$bpsize in $grid-breakpoints {
+    @media (min-width: $bpsize) {
+      @each $size, $length in $min-sizes {
+        .#{$abbrev}-#{$bpname}-#{$size} {
+          #{$prop}: $length !important;
+        }
+      }
+      .#{$abbrev}-#{$bpname}-auto {
+        #{$prop}: auto !important;
+      }
+    }
+  }
+}

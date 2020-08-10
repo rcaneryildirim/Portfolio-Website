@@ -1,0 +1,12 @@
+.confetti-position {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  top: 23rem;
+  width: 100%;
+  left: 0rem; }
+
+body {
+  background-color: green; }
+
+

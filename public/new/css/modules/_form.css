@@ -1,0 +1,57 @@
+.form-control-rounded {
+  border-radius: 30px; }
+
+.form-control-hero {
+  padding: 20px 40px;
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2); }
+  .form-control-hero::-webkit-input-placeholder {
+    color: #A5ADBB; }
+  .form-control-hero::-moz-placeholder {
+    color: #A5ADBB; }
+  .form-control-hero:-ms-input-placeholder {
+    color: #A5ADBB; }
+  .form-control-hero::placeholder {
+    color: #A5ADBB; }
+
+.stacked-btn-field {
+  position: relative; }
+  .stacked-btn-field .btn {
+    position: absolute;
+    right: 4px;
+    top: 4px; }
+
+.rainbow-form .form-top {
+  z-index: 10; }
+
+.rainbow-form-1 {
+  background: #fff; }
+  .rainbow-form-1 .blue-shade {
+    background: url("../images/forms-img/form-1.png") #fff no-repeat center center;
+    position: absolute;
+    height: 420px;
+    width: 100%; }
+  .rainbow-form-1 .form-top {
+    margin-top: 109px; }
+    .rainbow-form-1 .form-top h2 {
+      color: #fff; }
+    .rainbow-form-1 .form-top p {
+      color: #fff; }
+  .rainbow-form-1 .card {
+    margin-top: 88px;
+    -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 0; }
+    .rainbow-form-1 .card .card-block {
+      padding: 4.44rem 5rem 5rem; }
+    .rainbow-form-1 .card h5 {
+      margin-bottom: 44px; }
+
+.right0 {
+  right: 0; }
+
+
